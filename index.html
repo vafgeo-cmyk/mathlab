@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -19,178 +20,189 @@
 html{font-size:16px}
 body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;padding-bottom:4rem}
 
-.header{background:var(--navy);color:white;padding:2rem 1.5rem 1.5rem;text-align:center;position:relative;overflow:hidden}
-.header::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(45,107,228,.25)}
-.header::after{content:'';position:absolute;bottom:-40px;left:-40px;width:140px;height:140px;border-radius:50%;background:rgba(245,166,35,.15)}
+.header{background:var(–navy);color:white;padding:2rem 1.5rem 1.5rem;text-align:center;position:relative;overflow:hidden}
+.header::before{content:’’;position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;background:rgba(45,107,228,.25)}
+.header::after{content:’’;position:absolute;bottom:-40px;left:-40px;width:140px;height:140px;border-radius:50%;background:rgba(245,166,35,.15)}
 .header-inner{position:relative;z-index:1}
 .pencil-icon{font-size:2.5rem;margin-bottom:.5rem}
-.header h1{font-family:'Nunito',sans-serif;font-size:1.8rem;font-weight:800;letter-spacing:-.5px;margin-bottom:.25rem}
+.header h1{font-family:‘Nunito’,sans-serif;font-size:1.8rem;font-weight:800;letter-spacing:-.5px;margin-bottom:.25rem}
 .header p{font-size:.95rem;opacity:.75}
 .variant-badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:99px;padding:.2rem .75rem;font-size:.75rem;margin-top:.5rem}
 
 .main{max-width:900px;margin:0 auto;padding:0 1rem}
 
 /* NAME SCREEN */
-#name-screen{background:var(--white);border-radius:var(--radius);border:1px solid var(--border);box-shadow:var(--shadow);padding:2.5rem 2rem;margin:2rem auto;max-width:520px;text-align:center}
-#name-screen h2{font-family:'Nunito',sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:.5rem;color:var(--navy)}
-#name-screen p{color:var(--muted);font-size:.95rem;margin-bottom:1.5rem}
-.name-input{width:100%;font-family:'Nunito Sans',sans-serif;font-size:1.1rem;padding:.75rem 1rem;border:2px solid var(--border);border-radius:8px;color:var(--text);outline:none;transition:border-color .2s;margin-bottom:1.25rem}
-.name-input:focus{border-color:var(--blue)}
+#name-screen{background:var(–white);border-radius:var(–radius);border:1px solid var(–border);box-shadow:var(–shadow);padding:2.5rem 2rem;margin:2rem auto;max-width:520px;text-align:center}
+#name-screen h2{font-family:‘Nunito’,sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:.5rem;color:var(–navy)}
+#name-screen p{color:var(–muted);font-size:.95rem;margin-bottom:1.5rem}
+.name-input{width:100%;font-family:‘Nunito Sans’,sans-serif;font-size:1.1rem;padding:.75rem 1rem;border:2px solid var(–border);border-radius:8px;color:var(–text);outline:none;transition:border-color .2s;margin-bottom:1.25rem}
+.name-input:focus{border-color:var(–blue)}
 
 /* TEST SELECTOR */
-.test-select-label{font-family:'Nunito',sans-serif;font-weight:700;font-size:.85rem;color:var(--navy);margin-bottom:.75rem;display:block;text-align:left}
+.test-select-label{font-family:‘Nunito’,sans-serif;font-weight:700;font-size:.85rem;color:var(–navy);margin-bottom:.75rem;display:block;text-align:left}
 .test-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:1.25rem}
-.test-card{border:2px solid var(--border);border-radius:10px;padding:.9rem .75rem;cursor:pointer;transition:border-color .2s,background .2s,transform .1s;background:var(--bg);text-align:center;user-select:none}
-.test-card:hover{border-color:var(--blue);background:var(--sky)}
-.test-card.selected{border-color:var(--blue);background:var(--sky);transform:scale(1.02)}
+.test-card{border:2px solid var(–border);border-radius:10px;padding:.9rem .75rem;cursor:pointer;transition:border-color .2s,background .2s,transform .1s;background:var(–bg);text-align:center;user-select:none}
+.test-card:hover{border-color:var(–blue);background:var(–sky)}
+.test-card.selected{border-color:var(–blue);background:var(–sky);transform:scale(1.02)}
 .test-card.selected .tc-icon{transform:scale(1.15)}
 .tc-icon{font-size:1.6rem;margin-bottom:.3rem;display:block;transition:transform .2s}
-.tc-name{font-family:'Nunito',sans-serif;font-weight:800;font-size:.85rem;color:var(--navy)}
-.tc-info{font-size:.72rem;color:var(--muted);margin-top:2px}
+.tc-name{font-family:‘Nunito’,sans-serif;font-weight:800;font-size:.85rem;color:var(–navy)}
+.tc-info{font-size:.72rem;color:var(–muted);margin-top:2px}
 
-.btn-start{width:100%;font-family:'Nunito',sans-serif;font-weight:800;font-size:1.1rem;padding:.85rem;background:var(--blue);color:white;border:none;border-radius:8px;cursor:pointer;transition:background .2s,transform .1s}
-.btn-start:hover{background:var(--blue2)}
+.btn-start{width:100%;font-family:‘Nunito’,sans-serif;font-weight:800;font-size:1.1rem;padding:.85rem;background:var(–blue);color:white;border:none;border-radius:8px;cursor:pointer;transition:background .2s,transform .1s}
+.btn-start:hover{background:var(–blue2)}
 .btn-start:active{transform:scale(.98)}
 .btn-start:disabled{opacity:.4;cursor:not-allowed}
 
 /* TEST SCREEN */
 #test-screen{display:none}
 .info-bar{display:flex;gap:10px;margin:1.5rem 0 1rem;flex-wrap:wrap}
-.info-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:.75rem 1rem;flex:1;min-width:110px;text-align:center;box-shadow:var(--shadow)}
-.info-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);margin-bottom:2px}
-.info-val{font-family:'Nunito',sans-serif;font-size:1.4rem;font-weight:800;color:var(--navy)}
-#timer.warning{color:var(--red)}
-.progress-wrap{background:var(--border);border-radius:99px;height:6px;margin-bottom:1.5rem;overflow:hidden}
-.progress-fill{background:var(--blue);height:100%;border-radius:99px;transition:width .3s;width:0%}
-.section-title{font-family:'Nunito',sans-serif;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(--blue);border-bottom:2px solid var(--sky);padding-bottom:.4rem;margin:1.75rem 0 .9rem}
+.info-card{background:var(–white);border:1px solid var(–border);border-radius:var(–radius);padding:.75rem 1rem;flex:1;min-width:110px;text-align:center;box-shadow:var(–shadow)}
+.info-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.6px;color:var(–muted);margin-bottom:2px}
+.info-val{font-family:‘Nunito’,sans-serif;font-size:1.4rem;font-weight:800;color:var(–navy)}
+#timer.warning{color:var(–red)}
+.progress-wrap{background:var(–border);border-radius:99px;height:6px;margin-bottom:1.5rem;overflow:hidden}
+.progress-fill{background:var(–blue);height:100%;border-radius:99px;transition:width .3s;width:0%}
+.section-title{font-family:‘Nunito’,sans-serif;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.8px;color:var(–blue);border-bottom:2px solid var(–sky);padding-bottom:.4rem;margin:1.75rem 0 .9rem}
 
 /* ARITHMETIC */
 .q-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:8px}
-.q-card{background:var(--white);border:1px solid var(--border);border-radius:10px;padding:10px 12px;display:flex;align-items:center;gap:10px;transition:border-color .2s,box-shadow .2s}
-.q-card:focus-within{border-color:var(--blue);box-shadow:0 0 0 3px rgba(45,107,228,.12)}
-.q-num{font-size:.75rem;color:var(--muted);min-width:22px;font-weight:600}
-.q-text{font-family:'Nunito',sans-serif;font-size:1rem;font-weight:700;color:var(--text);flex:1}
-.q-input{width:80px;font-family:'Nunito',sans-serif;font-size:1rem;font-weight:700;text-align:center;padding:5px 6px;border:1.5px solid var(--border);border-radius:7px;background:var(--bg);color:var(--text);outline:none;transition:border-color .2s}
-.q-input:focus{border-color:var(--blue);background:var(--white)}
-.q-input.correct{border-color:var(--green);background:var(--green-bg);color:var(--green)}
-.q-input.wrong{border-color:var(--red);background:var(--red-bg);color:var(--red)}
+.q-card{background:var(–white);border:1px solid var(–border);border-radius:10px;padding:10px 12px;display:flex;align-items:center;gap:10px;transition:border-color .2s,box-shadow .2s}
+.q-card:focus-within{border-color:var(–blue);box-shadow:0 0 0 3px rgba(45,107,228,.12)}
+.q-num{font-size:.75rem;color:var(–muted);min-width:22px;font-weight:600}
+.q-text{font-family:‘Nunito’,sans-serif;font-size:1rem;font-weight:700;color:var(–text);flex:1}
+.q-input{width:80px;font-family:‘Nunito’,sans-serif;font-size:1rem;font-weight:700;text-align:center;padding:5px 6px;border:1.5px solid var(–border);border-radius:7px;background:var(–bg);color:var(–text);outline:none;transition:border-color .2s}
+.q-input:focus{border-color:var(–blue);background:var(–white)}
+.q-input.correct{border-color:var(–green);background:var(–green-bg);color:var(–green)}
+.q-input.wrong{border-color:var(–red);background:var(–red-bg);color:var(–red)}
 .q-check{font-size:1rem;min-width:18px;display:none}
 .q-check.show{display:block}
 
 /* REASONING QUESTION CARDS */
-.r-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1.1rem 1.25rem;margin-bottom:10px}
-.r-card:focus-within{border-color:var(--blue);box-shadow:0 0 0 3px rgba(45,107,228,.12)}
+.r-card{background:var(–white);border:1px solid var(–border);border-radius:var(–radius);padding:1.1rem 1.25rem;margin-bottom:10px}
+.r-card:focus-within{border-color:var(–blue);box-shadow:0 0 0 3px rgba(45,107,228,.12)}
 .r-header{display:flex;align-items:flex-start;gap:8px;margin-bottom:.6rem}
-.r-qnum{font-size:.75rem;color:var(--muted);font-weight:600;min-width:22px;padding-top:2px}
+.r-qnum{font-size:.75rem;color:var(–muted);font-weight:600;min-width:22px;padding-top:2px}
 .r-marks{font-size:.72rem;font-weight:700;padding:2px 8px;border-radius:99px;margin-left:auto;white-space:nowrap}
-.r-marks.m1{background:var(--sky);color:var(--blue2)}
-.r-marks.m2{background:var(--amber-bg);color:var(--amber)}
-.r-context{background:var(--bg);border-left:3px solid var(--border);border-radius:0 6px 6px 0;padding:.6rem .9rem;font-size:.9rem;line-height:1.6;color:var(--text);margin-bottom:.75rem}
-.r-question{font-family:'Nunito',sans-serif;font-size:1rem;font-weight:700;color:var(--navy);line-height:1.5;margin-bottom:.75rem}
-.r-sub{font-size:.85rem;color:var(--muted);font-weight:400;display:block;margin-top:2px}
+.r-marks.m1{background:var(–sky);color:var(–blue2)}
+.r-marks.m2{background:var(–amber-bg);color:var(–amber)}
+.r-context{background:var(–bg);border-left:3px solid var(–border);border-radius:0 6px 6px 0;padding:.6rem .9rem;font-size:.9rem;line-height:1.6;color:var(–text);margin-bottom:.75rem}
+.r-question{font-family:‘Nunito’,sans-serif;font-size:1rem;font-weight:700;color:var(–navy);line-height:1.5;margin-bottom:.75rem}
+.r-sub{font-size:.85rem;color:var(–muted);font-weight:400;display:block;margin-top:2px}
 .r-input-row{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.r-input{font-family:'Nunito',sans-serif;font-size:1rem;font-weight:700;text-align:center;padding:6px 8px;border:1.5px solid var(--border);border-radius:7px;background:var(--bg);color:var(--text);outline:none;transition:border-color .2s;width:100px}
-.r-input:focus{border-color:var(--blue);background:var(--white)}
-.r-input.correct{border-color:var(--green);background:var(--green-bg);color:var(--green)}
-.r-input.wrong{border-color:var(--red);background:var(--red-bg);color:var(--red)}
-.r-unit{font-size:.85rem;color:var(--muted)}
-.r-label{font-size:.8rem;color:var(--muted);margin-top:4px}
+.r-input{font-family:‘Nunito’,sans-serif;font-size:1rem;font-weight:700;text-align:center;padding:6px 8px;border:1.5px solid var(–border);border-radius:7px;background:var(–bg);color:var(–text);outline:none;transition:border-color .2s;width:100px}
+.r-input:focus{border-color:var(–blue);background:var(–white)}
+.r-input.correct{border-color:var(–green);background:var(–green-bg);color:var(–green)}
+.r-input.wrong{border-color:var(–red);background:var(–red-bg);color:var(–red)}
+.r-unit{font-size:.85rem;color:var(–muted)}
+.r-label{font-size:.8rem;color:var(–muted);margin-top:4px}
 .r-check{font-size:1rem;display:none}
 .r-check.show{display:inline}
-.r-working{border:1.5px dashed var(--border);border-radius:8px;width:100%;min-height:56px;padding:6px 8px;font-family:'Nunito Sans',sans-serif;font-size:.9rem;background:var(--bg);color:var(--text);resize:vertical;margin-bottom:.6rem}
-.r-working:focus{border-color:var(--blue);outline:none;background:var(--white)}
+.r-working{border:1.5px dashed var(–border);border-radius:8px;width:100%;min-height:56px;padding:6px 8px;font-family:‘Nunito Sans’,sans-serif;font-size:.9rem;background:var(–bg);color:var(–text);resize:vertical;margin-bottom:.6rem}
+.r-working:focus{border-color:var(–blue);outline:none;background:var(–white)}
 .r-input-block{display:flex;flex-direction:column;align-items:flex-start;gap:2px}
 
 /* MCQ */
 .mcq-opts{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:.5rem}
-.mcq-opt{font-family:'Nunito',sans-serif;font-weight:700;font-size:.95rem;padding:9px 14px;border-radius:8px;border:2px solid var(--border);background:var(--bg);cursor:pointer;user-select:none;transition:border-color .2s,background .2s,transform .1s;text-align:center}
-.mcq-opt:hover{border-color:var(--blue);background:var(--sky)}
-.mcq-opt.selected{border-color:var(--blue);background:var(--sky)}
-.mcq-opt.correct-final{border-color:var(--green)!important;background:var(--green-bg)!important;color:var(--green)!important}
-.mcq-opt.wrong-final{border-color:var(--red)!important;background:var(--red-bg)!important;color:var(--red)!important}
-.mcq-opt.correct-reveal{border-color:var(--green)!important;background:var(--green-bg)!important;color:var(--green)!important}
+.mcq-opt{font-family:‘Nunito’,sans-serif;font-weight:700;font-size:.95rem;padding:9px 14px;border-radius:8px;border:2px solid var(–border);background:var(–bg);cursor:pointer;user-select:none;transition:border-color .2s,background .2s,transform .1s;text-align:center}
+.mcq-opt:hover{border-color:var(–blue);background:var(–sky)}
+.mcq-opt.selected{border-color:var(–blue);background:var(–sky)}
+.mcq-opt.correct-final{border-color:var(–green)!important;background:var(–green-bg)!important;color:var(–green)!important}
+.mcq-opt.wrong-final{border-color:var(–red)!important;background:var(–red-bg)!important;color:var(–red)!important}
+.mcq-opt.correct-reveal{border-color:var(–green)!important;background:var(–green-bg)!important;color:var(–green)!important}
 
 /* MATCH */
-.match-wrapper{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:8px;position:relative}
+.match-wrapper{background:var(–white);border:1px solid var(–border);border-radius:var(–radius);padding:1rem 1.25rem;margin-bottom:8px;position:relative}
 .match-header{display:flex;align-items:flex-start;gap:8px;margin-bottom:.75rem;flex-wrap:wrap}
-.match-instruction{font-family:'Nunito',sans-serif;font-size:.85rem;font-weight:700;color:var(--navy);flex:1}
+.match-instruction{font-family:‘Nunito’,sans-serif;font-size:.85rem;font-weight:700;color:var(–navy);flex:1}
 .match-cols{display:grid;grid-template-columns:1fr 48px 1fr;align-items:center;gap:0;min-height:160px}
 .match-col{display:flex;flex-direction:column;gap:8px}
 .match-col-right{align-items:flex-end}
 .match-mid{position:relative;align-self:stretch;min-height:160px}
 .match-svg{position:absolute;top:0;left:0;width:100%;height:100%;overflow:visible;pointer-events:none}
-.match-pill{font-family:'Nunito',sans-serif;font-weight:700;font-size:.9rem;padding:7px 14px;border-radius:99px;border:2px solid var(--border);background:var(--bg);cursor:pointer;user-select:none;transition:border-color .2s,background .2s,transform .1s;text-align:center;white-space:nowrap}
-.match-pill:hover{border-color:var(--blue);background:var(--sky)}
-.match-pill.selected{border-color:var(--blue);background:var(--sky);transform:scale(1.04)}
+.match-pill{font-family:‘Nunito’,sans-serif;font-weight:700;font-size:.9rem;padding:7px 14px;border-radius:99px;border:2px solid var(–border);background:var(–bg);cursor:pointer;user-select:none;transition:border-color .2s,background .2s,transform .1s;text-align:center;white-space:nowrap}
+.match-pill:hover{border-color:var(–blue);background:var(–sky)}
+.match-pill.selected{border-color:var(–blue);background:var(–sky);transform:scale(1.04)}
 .match-pill.matched{border-color:#2d6be4;background:#e8f0fd;cursor:pointer}
-.match-pill.correct-final{border-color:var(--green)!important;background:var(--green-bg)!important;color:var(--green)!important}
-.match-pill.wrong-final{border-color:var(--red)!important;background:var(--red-bg)!important;color:var(--red)!important}
+.match-pill.correct-final{border-color:var(–green)!important;background:var(–green-bg)!important;color:var(–green)!important}
+.match-pill.wrong-final{border-color:var(–red)!important;background:var(–red-bg)!important;color:var(–red)!important}
 .match-status{font-size:.8rem;text-align:center;margin-top:.5rem;min-height:1.2em;font-weight:600}
 
 /* ORDER */
-.order-wrapper{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:1rem 1.25rem;margin-bottom:8px}
+.order-wrapper{background:var(–white);border:1px solid var(–border);border-radius:var(–radius);padding:1rem 1.25rem;margin-bottom:8px}
 .order-header{display:flex;align-items:center;gap:8px;margin-bottom:.3rem}
-.order-instruction{font-family:'Nunito',sans-serif;font-size:.85rem;font-weight:700;color:var(--navy)}
-.order-hint{font-size:.75rem;color:var(--muted);margin-bottom:.6rem}
-.order-labels{display:flex;justify-content:space-between;font-size:.7rem;color:var(--muted);margin-bottom:.25rem;padding:0 2px}
+.order-instruction{font-family:‘Nunito’,sans-serif;font-size:.85rem;font-weight:700;color:var(–navy)}
+.order-hint{font-size:.75rem;color:var(–muted);margin-bottom:.6rem}
+.order-labels{display:flex;justify-content:space-between;font-size:.7rem;color:var(–muted);margin-bottom:.25rem;padding:0 2px}
 .order-slots{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:.75rem}
-.order-slot{width:78px;height:42px;border:2px dashed var(--border);border-radius:8px;display:flex;align-items:center;justify-content:center;transition:border-color .2s,background .2s}
-.order-slot.filled{border-color:var(--blue);background:var(--sky)}
-.order-slot.correct-final{border-color:var(--green)!important;background:var(--green-bg)!important}
-.order-slot.wrong-final{border-color:var(--red)!important;background:var(--red-bg)!important}
-.order-arrow{color:var(--muted);font-size:1.2rem;font-weight:800;padding:0 2px}
-.order-bank{display:flex;flex-wrap:wrap;gap:8px;padding:8px;border:2px dashed var(--border);border-radius:8px;min-height:52px}
-.order-tile{font-family:'Nunito',sans-serif;font-weight:700;font-size:.9rem;padding:8px 12px;border-radius:8px;border:2px solid var(--blue);background:var(--sky);color:var(--blue2);cursor:pointer;user-select:none;transition:transform .1s,opacity .2s}
+.order-slot{width:78px;height:42px;border:2px dashed var(–border);border-radius:8px;display:flex;align-items:center;justify-content:center;transition:border-color .2s,background .2s}
+.order-slot.filled{border-color:var(–blue);background:var(–sky)}
+.order-slot.correct-final{border-color:var(–green)!important;background:var(–green-bg)!important}
+.order-slot.wrong-final{border-color:var(–red)!important;background:var(–red-bg)!important}
+.order-arrow{color:var(–muted);font-size:1.2rem;font-weight:800;padding:0 2px}
+.order-bank{display:flex;flex-wrap:wrap;gap:8px;padding:8px;border:2px dashed var(–border);border-radius:8px;min-height:52px}
+.order-tile{font-family:‘Nunito’,sans-serif;font-weight:700;font-size:.9rem;padding:8px 12px;border-radius:8px;border:2px solid var(–blue);background:var(–sky);color:var(–blue2);cursor:pointer;user-select:none;transition:transform .1s,opacity .2s}
 .order-tile:hover{transform:scale(1.05)}
 .order-tile.placed{opacity:.35;cursor:pointer}
-.order-tile.correct-final{border-color:var(--green)!important;background:var(--green-bg)!important;color:var(--green)!important;opacity:1!important}
-.order-tile.wrong-final{border-color:var(--red)!important;background:var(--red-bg)!important;color:var(--red)!important;opacity:1!important}
+.order-tile.correct-final{border-color:var(–green)!important;background:var(–green-bg)!important;color:var(–green)!important;opacity:1!important}
+.order-tile.wrong-final{border-color:var(–red)!important;background:var(–red-bg)!important;color:var(–red)!important;opacity:1!important}
 .order-status{font-size:.82rem;margin-top:.5rem;min-height:1.2em;font-weight:600}
 
 /* BUTTONS */
 .btn-row{display:flex;gap:10px;margin-top:2rem;flex-wrap:wrap}
-.btn{font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;padding:.75rem 1.5rem;border-radius:8px;cursor:pointer;border:2px solid var(--border);background:var(--white);color:var(--text);transition:background .2s,transform .1s}
-.btn:hover{background:var(--sky)}
+.btn{font-family:‘Nunito’,sans-serif;font-weight:800;font-size:1rem;padding:.75rem 1.5rem;border-radius:8px;cursor:pointer;border:2px solid var(–border);background:var(–white);color:var(–text);transition:background .2s,transform .1s}
+.btn:hover{background:var(–sky)}
 .btn:active{transform:scale(.98)}
-.btn-primary{background:var(--blue);color:white;border-color:var(--blue)}
-.btn-primary:hover{background:var(--blue2)}
+.btn-primary{background:var(–blue);color:white;border-color:var(–blue)}
+.btn-primary:hover{background:var(–blue2)}
 
 /* RESULTS */
 #results-screen{display:none}
-.results-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius);padding:2rem;text-align:center;margin:1.5rem 0;box-shadow:var(--shadow)}
-.score-circle{width:120px;height:120px;border-radius:50%;background:var(--sky);border:5px solid var(--blue);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 1rem}
-.score-big{font-family:'Nunito',sans-serif;font-size:2.5rem;font-weight:800;color:var(--blue);line-height:1}
-.score-denom{font-size:.8rem;color:var(--muted)}
-.score-name{font-family:'Nunito',sans-serif;font-size:1.3rem;font-weight:800;margin-bottom:.25rem}
-.score-band{font-size:1rem;color:var(--muted);margin-bottom:1rem}
-.band-chip{display:inline-block;padding:.3rem 1rem;border-radius:99px;font-family:'Nunito',sans-serif;font-weight:700;font-size:.85rem;margin-bottom:1rem}
-.band-excellent{background:var(--green-bg);color:var(--green)}
-.band-good{background:#e8f0fd;color:var(--blue2)}
-.band-developing{background:var(--amber-bg);color:var(--amber)}
-.band-support{background:var(--red-bg);color:var(--red)}
+.results-card{background:var(–white);border:1px solid var(–border);border-radius:var(–radius);padding:2rem;text-align:center;margin:1.5rem 0;box-shadow:var(–shadow)}
+.score-circle{width:120px;height:120px;border-radius:50%;background:var(–sky);border:5px solid var(–blue);display:flex;flex-direction:column;align-items:center;justify-content:center;margin:0 auto 1rem}
+.score-big{font-family:‘Nunito’,sans-serif;font-size:2.5rem;font-weight:800;color:var(–blue);line-height:1}
+.score-denom{font-size:.8rem;color:var(–muted)}
+.score-name{font-family:‘Nunito’,sans-serif;font-size:1.3rem;font-weight:800;margin-bottom:.25rem}
+.score-band{font-size:1rem;color:var(–muted);margin-bottom:1rem}
+.band-chip{display:inline-block;padding:.3rem 1rem;border-radius:99px;font-family:‘Nunito’,sans-serif;font-weight:700;font-size:.85rem;margin-bottom:1rem}
+.band-excellent{background:var(–green-bg);color:var(–green)}
+.band-good{background:#e8f0fd;color:var(–blue2)}
+.band-developing{background:var(–amber-bg);color:var(–amber)}
+.band-support{background:var(–red-bg);color:var(–red)}
 .email-status{font-size:.9rem;padding:.6rem 1rem;border-radius:8px;margin-top:.75rem;display:none}
-.email-status.sending{background:var(--sky);color:var(--blue2);display:block}
-.email-status.sent{background:var(--green-bg);color:var(--green);display:block}
-.email-status.failed{background:var(--red-bg);color:var(--red);display:block}
-.breakdown-title{font-family:'Nunito',sans-serif;font-weight:800;font-size:1rem;color:var(--navy);margin:1.5rem 0 .75rem;text-align:left}
+.email-status.sending{background:var(–sky);color:var(–blue2);display:block}
+.email-status.sent{background:var(–green-bg);color:var(–green);display:block}
+.email-status.failed{background:var(–red-bg);color:var(–red);display:block}
+.breakdown-title{font-family:‘Nunito’,sans-serif;font-weight:800;font-size:1rem;color:var(–navy);margin:1.5rem 0 .75rem;text-align:left}
 .wrong-list{list-style:none}
-.wrong-item{background:var(--white);border:1px solid var(--border);border-left:4px solid var(--red);border-radius:8px;padding:.6rem 1rem;margin-bottom:6px;font-size:.9rem;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
-.wrong-qnum{color:var(--muted);font-size:.8rem;min-width:28px}
+.wrong-item{background:var(–white);border:1px solid var(–border);border-left:4px solid var(–red);border-radius:8px;padding:.6rem 1rem;margin-bottom:6px;font-size:.9rem;display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
+.wrong-qnum{color:var(–muted);font-size:.8rem;min-width:28px}
 .wrong-q{flex:1;font-weight:600}
-.wrong-correct{color:var(--green);font-weight:700}
-.wrong-given{color:var(--red);font-size:.82rem}
+.wrong-correct{color:var(–green);font-weight:700}
+.wrong-given{color:var(–red);font-size:.82rem}
+
+/* 2-minute warning overlay */
+.time-warning-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:999;align-items:center;justify-content:center;}
+.time-warning-overlay.show{display:flex;}
+.time-warning-box{background:var(–white);border-radius:var(–radius);padding:2rem 2.5rem;text-align:center;max-width:340px;width:90%;box-shadow:0 8px 40px rgba(0,0,0,.25);border-top:5px solid var(–red);}
+.time-warning-box .tw-icon{font-size:2.5rem;margin-bottom:.5rem;}
+.time-warning-box h3{font-family:‘Nunito’,sans-serif;font-size:1.3rem;font-weight:800;color:var(–red);margin-bottom:.4rem;}
+.time-warning-box p{font-size:.95rem;color:var(–muted);margin-bottom:1.25rem;line-height:1.5;}
+.time-warning-box .btn-warn{font-family:‘Nunito’,sans-serif;font-weight:800;font-size:1rem;padding:.7rem 1.75rem;background:var(–red);color:white;border:none;border-radius:8px;cursor:pointer;}
+.time-warning-box .btn-warn:hover{background:#b83232;}
 
 @media(max-width:600px){
-  .header h1{font-size:1.4rem}
-  .q-grid{grid-template-columns:1fr}
-  .info-val{font-size:1.1rem}
-  .match-pill{font-size:.8rem;padding:6px 10px}
-  .order-tile{font-size:.82rem;padding:6px 8px}
-  .order-slot{width:68px}
-  .test-cards{grid-template-columns:1fr}
-  .mcq-opts{grid-template-columns:1fr}
+.header h1{font-size:1.4rem}
+.q-grid{grid-template-columns:1fr}
+.info-val{font-size:1.1rem}
+.match-pill{font-size:.8rem;padding:6px 10px}
+.order-tile{font-size:.82rem;padding:6px 8px}
+.order-slot{width:68px}
+.test-cards{grid-template-columns:1fr}
+.mcq-opts{grid-template-columns:1fr}
 }
 </style>
+
 </head>
 <body>
 
@@ -206,13 +218,15 @@ body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text)
 <div class="main">
 
 <!-- NAME + TEST SELECTION SCREEN -->
+
 <div id="name-screen">
   <h2>Before you start...</h2>
   <p>Enter your first name, then choose which test you'd like to do today.</p>
   <input class="name-input" id="pupil-name" type="text" placeholder="Your first name" maxlength="40"
     onkeydown="if(event.key==='Enter')document.getElementById('pupil-name').blur()">
 
-  <span class="test-select-label">Which test would you like to do?</span>
+<span class="test-select-label">Which test would you like to do?</span>
+
   <div class="test-cards">
     <div class="test-card" id="tc-arith" onclick="selectTest('arith')">
       <span class="tc-icon">✏️</span>
@@ -234,6 +248,7 @@ body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text)
 </div>
 
 <!-- TEST SCREEN -->
+
 <div id="test-screen">
   <div class="info-bar">
     <div class="info-card"><div class="info-label">Time left</div><div class="info-val" id="timer">30:00</div></div>
@@ -249,6 +264,7 @@ body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text)
 </div>
 
 <!-- RESULTS SCREEN -->
+
 <div id="results-screen">
   <div class="results-card">
     <div class="score-circle">
@@ -269,692 +285,734 @@ body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text)
 
 </div>
 
-<script>
+<!-- 2-minute warning overlay -->
+
+<div class="time-warning-overlay" id="time-warning-overlay">
+  <div class="time-warning-box">
+    <div class="tw-icon">⏰</div>
+    <h3>2 minutes left!</h3>
+    <p>You have 2 minutes remaining. Try to check your answers and fill in any blanks!</p>
+    <button class="btn-warn" onclick="dismissWarning()">OK, got it!</button>
+  </div>
+</div>
 /* ══ CONFIG ══ */
 const EJS_KEY="BMMGXE8I6OtVeMROI",EJS_SVC="service_wtgin0l",EJS_TPL="template_tb01514",P_EMAIL="vafgeo@gmail.com";
 emailjs.init(EJS_KEY);
 
 /* ══ ARITHMETIC BANK ══ */
 const ARITH_BANK={
-  "Addition":[
-    {q:"364 + 215",a:579},{q:"247 + 136",a:383},{q:"518 + 274",a:792},
-    {q:"463 + 329",a:792},{q:"185 + 407",a:592},{q:"326 + 458",a:784},
-    {q:"541 + 238",a:779},{q:"612 + 189",a:801},{q:"473 + 256",a:729},
-    {q:"308 + 465",a:773},{q:"1,247 + 536",a:1783},{q:"2,361 + 814",a:3175},
-    {q:"3,452 + 1,329",a:4781},{q:"4,382 + 2,419",a:6801},{q:"5,164 + 3,207",a:8371},
-    {q:"2,708 + 4,163",a:6871},{q:"6,341 + 2,589",a:8930},{q:"1,835 + 4,726",a:6561},
-    {q:"12,456 + 3,217",a:15673},{q:"24,307 + 15,486",a:39793},
-    {q:"3.4 + 2.5",a:5.9},{q:"6.7 + 1.8",a:8.5},{q:"4.6 + 5.3",a:9.9},
-    {q:"2.8 + 3.6",a:6.4},{q:"7.1 + 4.5",a:11.6},{q:"5.3 + 6.8",a:12.1},
-    {q:"8.4 + 3.7",a:12.1},{q:"1.9 + 7.6",a:9.5},{q:"4.2 + 8.9",a:13.1},
-  ],
-  "Subtraction":[
-    {q:"587 − 243",a:344},{q:"724 − 381",a:343},{q:"836 − 452",a:384},
-    {q:"963 − 527",a:436},{q:"745 − 318",a:427},{q:"892 − 456",a:436},
-    {q:"803 − 347",a:456},{q:"914 − 568",a:346},{q:"762 − 435",a:327},
-    {q:"1,834 − 619",a:1215},{q:"3,241 − 827",a:2414},{q:"4,507 − 1,283",a:3224},
-    {q:"5,002 − 1,346",a:3656},{q:"6,314 − 2,758",a:3556},{q:"7,820 − 3,461",a:4359},
-    {q:"18,500 − 4,263",a:14237},{q:"30,000 − 12,456",a:17544},
-    {q:"25,400 − 13,728",a:11672},{q:"42,000 − 17,345",a:24655},
-    {q:"7.9 − 3.4",a:4.5},{q:"8.3 − 5.6",a:2.7},{q:"10.0 − 4.7",a:5.3},
-    {q:"9.5 − 3.8",a:5.7},{q:"6.2 − 1.9",a:4.3},{q:"12.0 − 5.4",a:6.6},
-    {q:"15.3 − 7.8",a:7.5},{q:"11.1 − 4.6",a:6.5},{q:"8.0 − 3.7",a:4.3},
-  ],
-  "Multiplication":[
-    {q:"43 × 6",a:258},{q:"57 × 4",a:228},{q:"68 × 3",a:204},
-    {q:"74 × 5",a:370},{q:"82 × 7",a:574},{q:"91 × 8",a:728},
-    {q:"63 × 9",a:567},{q:"47 × 6",a:282},{q:"85 × 4",a:340},
-    {q:"125 × 3",a:375},{q:"214 × 4",a:856},{q:"247 × 5",a:1235},
-    {q:"318 × 4",a:1272},{q:"236 × 6",a:1416},{q:"184 × 7",a:1288},
-    {q:"36 × 14",a:504},{q:"24 × 13",a:312},{q:"52 × 11",a:572},
-    {q:"43 × 12",a:516},{q:"45 × 16",a:720},{q:"34 × 15",a:510},
-    {q:"180 × 6",a:1080},{q:"240 × 4",a:960},{q:"320 × 5",a:1600},
-  ],
-  "Division":[
-    {q:"84 ÷ 4",a:21},{q:"72 ÷ 3",a:24},{q:"96 ÷ 4",a:24},
-    {q:"85 ÷ 5",a:17},{q:"78 ÷ 6",a:13},{q:"91 ÷ 7",a:13},
-    {q:"126 ÷ 6",a:21},{q:"175 ÷ 5",a:35},{q:"168 ÷ 7",a:24},
-    {q:"192 ÷ 8",a:24},{q:"207 ÷ 9",a:23},{q:"156 ÷ 4",a:39},
-    {q:"312 ÷ 4",a:78},{q:"432 ÷ 6",a:72},{q:"504 ÷ 7",a:72},
-    {q:"648 ÷ 8",a:81},{q:"945 ÷ 9",a:105},{q:"385 ÷ 5",a:77},
-    {q:"372 ÷ 4",a:93},{q:"414 ÷ 6",a:69},{q:"560 ÷ 7",a:80},
-    {q:"576 ÷ 8",a:72},{q:"324 ÷ 9",a:36},{q:"325 ÷ 5",a:65},
-  ],
+“Addition”:[
+{q:“364 + 215”,a:579},{q:“247 + 136”,a:383},{q:“518 + 274”,a:792},
+{q:“463 + 329”,a:792},{q:“185 + 407”,a:592},{q:“326 + 458”,a:784},
+{q:“541 + 238”,a:779},{q:“612 + 189”,a:801},{q:“473 + 256”,a:729},
+{q:“308 + 465”,a:773},{q:“1,247 + 536”,a:1783},{q:“2,361 + 814”,a:3175},
+{q:“3,452 + 1,329”,a:4781},{q:“4,382 + 2,419”,a:6801},{q:“5,164 + 3,207”,a:8371},
+{q:“2,708 + 4,163”,a:6871},{q:“6,341 + 2,589”,a:8930},{q:“1,835 + 4,726”,a:6561},
+{q:“12,456 + 3,217”,a:15673},{q:“24,307 + 15,486”,a:39793},
+{q:“3.4 + 2.5”,a:5.9},{q:“6.7 + 1.8”,a:8.5},{q:“4.6 + 5.3”,a:9.9},
+{q:“2.8 + 3.6”,a:6.4},{q:“7.1 + 4.5”,a:11.6},{q:“5.3 + 6.8”,a:12.1},
+{q:“8.4 + 3.7”,a:12.1},{q:“1.9 + 7.6”,a:9.5},{q:“4.2 + 8.9”,a:13.1},
+],
+“Subtraction”:[
+{q:“587 − 243”,a:344},{q:“724 − 381”,a:343},{q:“836 − 452”,a:384},
+{q:“963 − 527”,a:436},{q:“745 − 318”,a:427},{q:“892 − 456”,a:436},
+{q:“803 − 347”,a:456},{q:“914 − 568”,a:346},{q:“762 − 435”,a:327},
+{q:“1,834 − 619”,a:1215},{q:“3,241 − 827”,a:2414},{q:“4,507 − 1,283”,a:3224},
+{q:“5,002 − 1,346”,a:3656},{q:“6,314 − 2,758”,a:3556},{q:“7,820 − 3,461”,a:4359},
+{q:“18,500 − 4,263”,a:14237},{q:“30,000 − 12,456”,a:17544},
+{q:“25,400 − 13,728”,a:11672},{q:“42,000 − 17,345”,a:24655},
+{q:“7.9 − 3.4”,a:4.5},{q:“8.3 − 5.6”,a:2.7},{q:“10.0 − 4.7”,a:5.3},
+{q:“9.5 − 3.8”,a:5.7},{q:“6.2 − 1.9”,a:4.3},{q:“12.0 − 5.4”,a:6.6},
+{q:“15.3 − 7.8”,a:7.5},{q:“11.1 − 4.6”,a:6.5},{q:“8.0 − 3.7”,a:4.3},
+],
+“Multiplication”:[
+{q:“43 × 6”,a:258},{q:“57 × 4”,a:228},{q:“68 × 3”,a:204},
+{q:“74 × 5”,a:370},{q:“82 × 7”,a:574},{q:“91 × 8”,a:728},
+{q:“63 × 9”,a:567},{q:“47 × 6”,a:282},{q:“85 × 4”,a:340},
+{q:“125 × 3”,a:375},{q:“214 × 4”,a:856},{q:“247 × 5”,a:1235},
+{q:“318 × 4”,a:1272},{q:“236 × 6”,a:1416},{q:“184 × 7”,a:1288},
+{q:“36 × 14”,a:504},{q:“24 × 13”,a:312},{q:“52 × 11”,a:572},
+{q:“43 × 12”,a:516},{q:“45 × 16”,a:720},{q:“34 × 15”,a:510},
+{q:“180 × 6”,a:1080},{q:“240 × 4”,a:960},{q:“320 × 5”,a:1600},
+],
+“Division”:[
+{q:“84 ÷ 4”,a:21},{q:“72 ÷ 3”,a:24},{q:“96 ÷ 4”,a:24},
+{q:“85 ÷ 5”,a:17},{q:“78 ÷ 6”,a:13},{q:“91 ÷ 7”,a:13},
+{q:“126 ÷ 6”,a:21},{q:“175 ÷ 5”,a:35},{q:“168 ÷ 7”,a:24},
+{q:“192 ÷ 8”,a:24},{q:“207 ÷ 9”,a:23},{q:“156 ÷ 4”,a:39},
+{q:“312 ÷ 4”,a:78},{q:“432 ÷ 6”,a:72},{q:“504 ÷ 7”,a:72},
+{q:“648 ÷ 8”,a:81},{q:“945 ÷ 9”,a:105},{q:“385 ÷ 5”,a:77},
+{q:“372 ÷ 4”,a:93},{q:“414 ÷ 6”,a:69},{q:“560 ÷ 7”,a:80},
+{q:“576 ÷ 8”,a:72},{q:“324 ÷ 9”,a:36},{q:“325 ÷ 5”,a:65},
+],
 };
 const MATCH_BANK=[
-  {lbl:"Match each value to its equivalent",left:["0.5","0.25","0.75","0.1"],right:["25%","75%","10%","50%"],sol:{0:3,1:0,2:1,3:2}},
-  {lbl:"Match each fraction to its decimal",left:["½","¼","⅕","¾"],right:["0.75","0.5","0.25","0.2"],sol:{0:1,1:2,2:3,3:0}},
-  {lbl:"Match each percentage to its fraction",left:["50%","25%","20%","75%"],right:["¼","½","¾","⅕"],sol:{0:1,1:0,2:3,3:2}},
-  {lbl:"Match each decimal to its fraction",left:["0.5","0.2","0.25","0.75"],right:["¼","½","⅕","¾"],sol:{0:1,1:2,2:0,3:3}},
-  {lbl:"Match each value to its equivalent",left:["½","10%","0.75","25%"],right:["0.1","¾","0.5","¼"],sol:{0:2,1:0,2:1,3:3}},
-  {lbl:"Match each decimal to its percentage",left:["0.3","0.6","0.9","0.4"],right:["60%","40%","90%","30%"],sol:{0:3,1:0,2:2,3:1}},
-  {lbl:"Match each percentage to its decimal",left:["30%","60%","80%","40%"],right:["0.8","0.4","0.3","0.6"],sol:{0:2,1:3,2:0,3:1}},
-  {lbl:"Match each value to its equivalent",left:["100%","50%","10%","1%"],right:["1/10","1/100","1","1/2"],sol:{0:2,1:3,2:0,3:1}},
-  {lbl:"Match each decimal to its equivalent",left:["0.05","0.5","0.55","0.4"],right:["2/5","55/100","5/100","1/2"],sol:{0:2,1:3,2:1,3:0}},
-  {lbl:"Match each value to its equivalent",left:["⅓","⅔","¼","⅛"],right:["0.125","0.25","0.333…","0.666…"],sol:{0:2,1:3,2:1,3:0}},
-  {lbl:"Match each fraction to its percentage",left:["1/2","1/4","1/5","3/4"],right:["25%","75%","50%","20%"],sol:{0:2,1:0,2:3,3:1}},
-  {lbl:"Match each percentage to its decimal",left:["5%","15%","45%","90%"],right:["0.9","0.05","0.45","0.15"],sol:{0:1,1:3,2:2,3:0}},
+{lbl:“Match each value to its equivalent”,left:[“0.5”,“0.25”,“0.75”,“0.1”],right:[“25%”,“75%”,“10%”,“50%”],sol:{0:3,1:0,2:1,3:2}},
+{lbl:“Match each fraction to its decimal”,left:[“½”,“¼”,“⅕”,“¾”],right:[“0.75”,“0.5”,“0.25”,“0.2”],sol:{0:1,1:2,2:3,3:0}},
+{lbl:“Match each percentage to its fraction”,left:[“50%”,“25%”,“20%”,“75%”],right:[“¼”,“½”,“¾”,“⅕”],sol:{0:1,1:0,2:3,3:2}},
+{lbl:“Match each decimal to its fraction”,left:[“0.5”,“0.2”,“0.25”,“0.75”],right:[“¼”,“½”,“⅕”,“¾”],sol:{0:1,1:2,2:0,3:3}},
+{lbl:“Match each value to its equivalent”,left:[“½”,“10%”,“0.75”,“25%”],right:[“0.1”,“¾”,“0.5”,“¼”],sol:{0:2,1:0,2:1,3:3}},
+{lbl:“Match each decimal to its percentage”,left:[“0.3”,“0.6”,“0.9”,“0.4”],right:[“60%”,“40%”,“90%”,“30%”],sol:{0:3,1:0,2:2,3:1}},
+{lbl:“Match each percentage to its decimal”,left:[“30%”,“60%”,“80%”,“40%”],right:[“0.8”,“0.4”,“0.3”,“0.6”],sol:{0:2,1:3,2:0,3:1}},
+{lbl:“Match each value to its equivalent”,left:[“100%”,“50%”,“10%”,“1%”],right:[“1/10”,“1/100”,“1”,“1/2”],sol:{0:2,1:3,2:0,3:1}},
+{lbl:“Match each decimal to its equivalent”,left:[“0.05”,“0.5”,“0.55”,“0.4”],right:[“2/5”,“55/100”,“5/100”,“1/2”],sol:{0:2,1:3,2:1,3:0}},
+{lbl:“Match each value to its equivalent”,left:[“⅓”,“⅔”,“¼”,“⅛”],right:[“0.125”,“0.25”,“0.333…”,“0.666…”],sol:{0:2,1:3,2:1,3:0}},
+{lbl:“Match each fraction to its percentage”,left:[“1/2”,“1/4”,“1/5”,“3/4”],right:[“25%”,“75%”,“50%”,“20%”],sol:{0:2,1:0,2:3,3:1}},
+{lbl:“Match each percentage to its decimal”,left:[“5%”,“15%”,“45%”,“90%”],right:[“0.9”,“0.05”,“0.45”,“0.15”],sol:{0:1,1:3,2:2,3:0}},
 ];
 const ORDER_BANK=[
-  {lbl:"Order from largest to smallest",dir:"desc",vals:["¾","0.6","65%","0.7"],keys:[0.75,0.6,0.65,0.7]},
-  {lbl:"Order from smallest to largest",dir:"asc",vals:["0.3","¼","35%","0.28"],keys:[0.3,0.25,0.35,0.28]},
-  {lbl:"Order from largest to smallest",dir:"desc",vals:["3/4","0.8","70%","4/5"],keys:[0.75,0.8,0.70,0.8]},
-  {lbl:"Order from smallest to largest",dir:"asc",vals:["0.09","1/10","9%","11%"],keys:[0.09,0.1,0.09,0.11]},
-  {lbl:"Order from largest to smallest",dir:"desc",vals:["2.5","2½","245%","2.45"],keys:[2.5,2.5,2.45,2.45]},
-  {lbl:"Order from smallest to largest",dir:"asc",vals:["1/5","0.25","18%","0.2"],keys:[0.2,0.25,0.18,0.2]},
-  {lbl:"Order from largest to smallest",dir:"desc",vals:["5/8","0.6","55%","0.65"],keys:[0.625,0.6,0.55,0.65]},
-  {lbl:"Order from smallest to largest",dir:"asc",vals:["1.05","1½","1.4","110%"],keys:[1.05,1.5,1.4,1.1]},
-  {lbl:"Order from largest to smallest",dir:"desc",vals:["7/10","0.65","72%","0.7"],keys:[0.7,0.65,0.72,0.7]},
-  {lbl:"Order from smallest to largest",dir:"asc",vals:["0.4","2/5","38%","0.42"],keys:[0.4,0.4,0.38,0.42]},
-  {lbl:"Order from largest to smallest",dir:"desc",vals:["½","0.45","48%","0.5"],keys:[0.5,0.45,0.48,0.5]},
-  {lbl:"Order from smallest to largest",dir:"asc",vals:["¼","0.3","28%","0.25"],keys:[0.25,0.3,0.28,0.25]},
-  {lbl:"Order from largest to smallest",dir:"desc",vals:["80%","¾","0.78","4/5"],keys:[0.8,0.75,0.78,0.8]},
+{lbl:“Order from largest to smallest”,dir:“desc”,vals:[“¾”,“0.6”,“65%”,“0.7”],keys:[0.75,0.6,0.65,0.7]},
+{lbl:“Order from smallest to largest”,dir:“asc”,vals:[“0.3”,“¼”,“35%”,“0.28”],keys:[0.3,0.25,0.35,0.28]},
+{lbl:“Order from largest to smallest”,dir:“desc”,vals:[“3/4”,“0.8”,“70%”,“4/5”],keys:[0.75,0.8,0.70,0.8]},
+{lbl:“Order from smallest to largest”,dir:“asc”,vals:[“0.09”,“1/10”,“9%”,“11%”],keys:[0.09,0.1,0.09,0.11]},
+{lbl:“Order from largest to smallest”,dir:“desc”,vals:[“2.5”,“2½”,“245%”,“2.45”],keys:[2.5,2.5,2.45,2.45]},
+{lbl:“Order from smallest to largest”,dir:“asc”,vals:[“1/5”,“0.25”,“18%”,“0.2”],keys:[0.2,0.25,0.18,0.2]},
+{lbl:“Order from largest to smallest”,dir:“desc”,vals:[“5/8”,“0.6”,“55%”,“0.65”],keys:[0.625,0.6,0.55,0.65]},
+{lbl:“Order from smallest to largest”,dir:“asc”,vals:[“1.05”,“1½”,“1.4”,“110%”],keys:[1.05,1.5,1.4,1.1]},
+{lbl:“Order from largest to smallest”,dir:“desc”,vals:[“7/10”,“0.65”,“72%”,“0.7”],keys:[0.7,0.65,0.72,0.7]},
+{lbl:“Order from smallest to largest”,dir:“asc”,vals:[“0.4”,“2/5”,“38%”,“0.42”],keys:[0.4,0.4,0.38,0.42]},
+{lbl:“Order from largest to smallest”,dir:“desc”,vals:[“½”,“0.45”,“48%”,“0.5”],keys:[0.5,0.45,0.48,0.5]},
+{lbl:“Order from smallest to largest”,dir:“asc”,vals:[“¼”,“0.3”,“28%”,“0.25”],keys:[0.25,0.3,0.28,0.25]},
+{lbl:“Order from largest to smallest”,dir:“desc”,vals:[“80%”,“¾”,“0.78”,“4/5”],keys:[0.8,0.75,0.78,0.8]},
 ];
 
 /* ══ REASONING TEST 2 BANK ══
-   Each question: {id, type:'mcq'|'input'|'input2', marks:1|2, context?, question, opts?(mcq), answers[], units?[], labels?[]}
-   answers: array of accepted numeric values (or strings for mcq key)
-   For type='input2': two separate input boxes (e.g. hours + minutes)
+Each question: {id, type:‘mcq’|‘input’|‘input2’, marks:1|2, context?, question, opts?(mcq), answers[], units?[], labels?[]}
+answers: array of accepted numeric values (or strings for mcq key)
+For type=‘input2’: two separate input boxes (e.g. hours + minutes)
 */
 const R2_BANK=[
-  // NUMBER & PLACE VALUE
-  {id:'r2-1',type:'input',marks:1,question:"What is the value of the digit 7 in the number 47,362?",answers:[7000],units:[""]},
-  {id:'r2-2',type:'mcq',marks:1,question:"Which number is 1,000 more than 36,842?",opts:["36,942","37,842","46,842","35,842"],answers:[1]},
-  {id:'r2-3',type:'input',marks:1,question:"Round 47,638 to the nearest 1,000.",answers:[48000],units:[""]},
-  {id:'r2-4',type:'mcq',marks:1,question:"Which of these is the largest number?",opts:["0.72","0.8","0.709","0.79"],answers:[1]},
-  {id:'r2-5',type:'input',marks:1,question:"Write the missing number.\n□ × 100 = 4,700",answers:[47],units:[""]},
-  // ADDITION & SUBTRACTION
-  {id:'r2-6',type:'input',marks:1,question:"A school has 1,248 pupils. 567 are girls. How many are boys?",answers:[681],units:["boys"]},
-  {id:'r2-7',type:'input',marks:1,question:"2,450 + 1,375 + 825 = ?",answers:[4650],units:[""]},
-  {id:'r2-8',type:'input',marks:1,question:"A bag of apples weighs 1.35 kg. A bag of oranges weighs 870 g.\nWhat is the total weight in grams?",answers:[2220],units:["g"]},
-  {id:'r2-9',type:'input',marks:1,question:"10,000 − 3,467 = ?",answers:[6533],units:[""]},
-  // MULTIPLICATION & DIVISION
-  {id:'r2-10',type:'input',marks:1,question:"A cinema has 24 rows. Each row has 18 seats. How many seats altogether?",answers:[432],units:["seats"]},
-  {id:'r2-11',type:'input',marks:1,question:"168 ÷ 8 = ?",answers:[21],units:[""]},
-  {id:'r2-12',type:'input',marks:1,question:"What is 35 × 20?",answers:[700],units:[""]},
-  {id:'r2-13',type:'mcq',marks:1,question:"Which of these is a multiple of both 4 and 6?",opts:["14","18","24","30"],answers:[2]},
-  {id:'r2-14',type:'input',marks:1,question:"A rectangle has a perimeter of 36 cm. Its length is 11 cm. What is its width?",answers:[7],units:["cm"]},
-  // FRACTIONS & DECIMALS
-  {id:'r2-15',type:'mcq',marks:1,question:"Which two fractions are equivalent to ¾? (Choose the correct pair)",opts:["6/8 and 12/16","6/8 and 9/16","9/12 and 12/24","15/20 and 3/8"],answers:[0]},
-  {id:'r2-16',type:'input',marks:1,question:"What is 35% of 260?",answers:[91],units:[""]},
-  {id:'r2-17',type:'mcq',marks:1,question:"What is ³⁄₅ as a decimal?",opts:["0.35","0.53","0.6","0.65"],answers:[2]},
-  {id:'r2-18',type:'input',marks:1,question:"½ + ¾ = ? (Write as a mixed number, e.g. 1.25)",answers:[1.25],units:[""]},
-  {id:'r2-19',type:'input',marks:1,question:"What is ²⁄₃ of 270?",answers:[180],units:[""]},
-  // MEASUREMENT
-  {id:'r2-20',type:'input',marks:1,question:"A length of ribbon is 3.6 m long. It is cut into pieces 40 cm each. How many pieces?",answers:[9],units:["pieces"]},
-  {id:'r2-21',type:'input',marks:1,question:"How many minutes are in 4¾ hours?",answers:[285],units:["minutes"]},
-  {id:'r2-22',type:'mcq',marks:1,question:"A jug holds 2.5 litres. It is ²⁄₅ full. How much water is in it?",opts:["0.5 litres","1 litre","1.25 litres","1.5 litres"],answers:[1]},
-  // GEOMETRY & STATISTICS
-  {id:'r2-23',type:'input',marks:1,question:"A square has a perimeter of 48 cm. What is its area?",answers:[144],units:["cm²"]},
-  {id:'r2-24',type:'mcq',marks:1,question:"Which shape has exactly 2 lines of symmetry?",opts:["Equilateral triangle","Square","Rectangle","Regular pentagon"],answers:[2]},
-  {id:'r2-25',type:'input',marks:1,question:"The mean of 5 numbers is 12. Four of the numbers are 8, 10, 14, 16. What is the fifth number?",answers:[12],units:[""]},
-  // 2-MARK QUESTIONS
-  {id:'r2-26',type:'input2',marks:2,question:"Stamps cost 7p each. Stickers cost 12p each.\nLily buys some stamps and some stickers and spends exactly £1.00.\nHow many of each?",labels:["stamps","stickers"],answers:[8,3],units:["",""]},
-  {id:'r2-27',type:'input',marks:2,question:"A shop has 1,440 cans. They are packed in boxes of 24. The boxes are packed on pallets of 15 boxes each. How many pallets are needed?",answers:[4],units:["pallets"]},
-  {id:'r2-28',type:'input2',marks:2,question:"A film starts at 14:35 and lasts 1 hour 48 minutes.\nWhat time does it end? Write as HH:MM",labels:["hours","minutes"],answers:[16,23],units:["h","min"]},
-  {id:'r2-29',type:'input',marks:2,question:"A recipe for 6 people needs 450 g of flour. How much flour is needed for 10 people?",answers:[750],units:["g"]},
-  {id:'r2-30',type:'input',marks:2,question:"A train travels at 90 km/h. How far does it travel in 40 minutes?",answers:[60],units:["km"]},
-  // EXTRAS for rotation
-  {id:'r2-31',type:'input',marks:1,question:"What is 15% of 180?",answers:[27],units:[""]},
-  {id:'r2-32',type:'input',marks:1,question:"Write the next term: 3, 7, 15, 31, ___",answers:[63],units:[""]},
-  {id:'r2-33',type:'mcq',marks:1,question:"Which is equivalent to 3/4?",opts:["6/9","9/12","8/14","6/10"],answers:[1]},
-  {id:'r2-34',type:'input',marks:1,question:"A box of chocolates costs £3.60. What is the cost of 7 boxes?",answers:[25.2],units:["£"]},
-  {id:'r2-35',type:'input',marks:1,question:"A shape has interior angles of 90°, 90°, 120° and 60°. What is the fourth angle?",answers:[120],units:["°"]},
+// NUMBER & PLACE VALUE
+{id:‘r2-1’,type:‘input’,marks:1,question:“What is the value of the digit 7 in the number 47,362?”,answers:[7000],units:[””]},
+{id:‘r2-2’,type:‘mcq’,marks:1,question:“Which number is 1,000 more than 36,842?”,opts:[“36,942”,“37,842”,“46,842”,“35,842”],answers:[1]},
+{id:‘r2-3’,type:‘input’,marks:1,question:“Round 47,638 to the nearest 1,000.”,answers:[48000],units:[””]},
+{id:‘r2-4’,type:‘mcq’,marks:1,question:“Which of these is the largest number?”,opts:[“0.72”,“0.8”,“0.709”,“0.79”],answers:[1]},
+{id:‘r2-5’,type:‘input’,marks:1,question:“Write the missing number.\n□ × 100 = 4,700”,answers:[47],units:[””]},
+// ADDITION & SUBTRACTION
+{id:‘r2-6’,type:‘input’,marks:1,question:“A school has 1,248 pupils. 567 are girls. How many are boys?”,answers:[681],units:[“boys”]},
+{id:‘r2-7’,type:‘input’,marks:1,question:“2,450 + 1,375 + 825 = ?”,answers:[4650],units:[””]},
+{id:‘r2-8’,type:‘input’,marks:1,question:“A bag of apples weighs 1.35 kg. A bag of oranges weighs 870 g.\nWhat is the total weight in grams?”,answers:[2220],units:[“g”]},
+{id:‘r2-9’,type:‘input’,marks:1,question:“10,000 − 3,467 = ?”,answers:[6533],units:[””]},
+// MULTIPLICATION & DIVISION
+{id:‘r2-10’,type:‘input’,marks:1,question:“A cinema has 24 rows. Each row has 18 seats. How many seats altogether?”,answers:[432],units:[“seats”]},
+{id:‘r2-11’,type:‘input’,marks:1,question:“168 ÷ 8 = ?”,answers:[21],units:[””]},
+{id:‘r2-12’,type:‘input’,marks:1,question:“What is 35 × 20?”,answers:[700],units:[””]},
+{id:‘r2-13’,type:‘mcq’,marks:1,question:“Which of these is a multiple of both 4 and 6?”,opts:[“14”,“18”,“24”,“30”],answers:[2]},
+{id:‘r2-14’,type:‘input’,marks:1,question:“A rectangle has a perimeter of 36 cm. Its length is 11 cm. What is its width?”,answers:[7],units:[“cm”]},
+// FRACTIONS & DECIMALS
+{id:‘r2-15’,type:‘mcq’,marks:1,question:“Which two fractions are equivalent to ¾? (Choose the correct pair)”,opts:[“6/8 and 12/16”,“6/8 and 9/16”,“9/12 and 12/24”,“15/20 and 3/8”],answers:[0]},
+{id:‘r2-16’,type:‘input’,marks:1,question:“What is 35% of 260?”,answers:[91],units:[””]},
+{id:‘r2-17’,type:‘mcq’,marks:1,question:“What is ³⁄₅ as a decimal?”,opts:[“0.35”,“0.53”,“0.6”,“0.65”],answers:[2]},
+{id:‘r2-18’,type:‘input’,marks:1,question:“½ + ¾ = ? (Write as a mixed number, e.g. 1.25)”,answers:[1.25],units:[””]},
+{id:‘r2-19’,type:‘input’,marks:1,question:“What is ²⁄₃ of 270?”,answers:[180],units:[””]},
+// MEASUREMENT
+{id:‘r2-20’,type:‘input’,marks:1,question:“A length of ribbon is 3.6 m long. It is cut into pieces 40 cm each. How many pieces?”,answers:[9],units:[“pieces”]},
+{id:‘r2-21’,type:‘input’,marks:1,question:“How many minutes are in 4¾ hours?”,answers:[285],units:[“minutes”]},
+{id:‘r2-22’,type:‘mcq’,marks:1,question:“A jug holds 2.5 litres. It is ²⁄₅ full. How much water is in it?”,opts:[“0.5 litres”,“1 litre”,“1.25 litres”,“1.5 litres”],answers:[1]},
+// GEOMETRY & STATISTICS
+{id:‘r2-23’,type:‘input’,marks:1,question:“A square has a perimeter of 48 cm. What is its area?”,answers:[144],units:[“cm²”]},
+{id:‘r2-24’,type:‘mcq’,marks:1,question:“Which shape has exactly 2 lines of symmetry?”,opts:[“Equilateral triangle”,“Square”,“Rectangle”,“Regular pentagon”],answers:[2]},
+{id:‘r2-25’,type:‘input’,marks:1,question:“The mean of 5 numbers is 12. Four of the numbers are 8, 10, 14, 16. What is the fifth number?”,answers:[12],units:[””]},
+// 2-MARK QUESTIONS
+{id:‘r2-26’,type:‘input2’,marks:2,question:“Stamps cost 7p each. Stickers cost 12p each.\nLily buys some stamps and some stickers and spends exactly £1.00.\nHow many of each?”,labels:[“stamps”,“stickers”],answers:[8,3],units:[””,””]},
+{id:‘r2-27’,type:‘input’,marks:2,question:“A shop has 1,440 cans. They are packed in boxes of 24. The boxes are packed on pallets of 15 boxes each. How many pallets are needed?”,answers:[4],units:[“pallets”]},
+{id:‘r2-28’,type:‘input2’,marks:2,question:“A film starts at 14:35 and lasts 1 hour 48 minutes.\nWhat time does it end? Write as HH:MM”,labels:[“hours”,“minutes”],answers:[16,23],units:[“h”,“min”]},
+{id:‘r2-29’,type:‘input’,marks:2,question:“A recipe for 6 people needs 450 g of flour. How much flour is needed for 10 people?”,answers:[750],units:[“g”]},
+{id:‘r2-30’,type:‘input’,marks:2,question:“A train travels at 90 km/h. How far does it travel in 40 minutes?”,answers:[60],units:[“km”]},
+// EXTRAS for rotation
+{id:‘r2-31’,type:‘input’,marks:1,question:“What is 15% of 180?”,answers:[27],units:[””]},
+{id:‘r2-32’,type:‘input’,marks:1,question:“Write the next term: 3, 7, 15, 31, ___”,answers:[63],units:[””]},
+{id:‘r2-33’,type:‘mcq’,marks:1,question:“Which is equivalent to 3/4?”,opts:[“6/9”,“9/12”,“8/14”,“6/10”],answers:[1]},
+{id:‘r2-34’,type:‘input’,marks:1,question:“A box of chocolates costs £3.60. What is the cost of 7 boxes?”,answers:[25.2],units:[“£”]},
+{id:‘r2-35’,type:‘input’,marks:1,question:“A shape has interior angles of 90°, 90°, 120° and 60°. What is the fourth angle?”,answers:[120],units:[“°”]},
 ];
 
-/* ══ REASONING TEST 3 BANK ══ (harder — more context, multi-step, more 2-mark) */
+/* ══ REASONING TEST 3 BANK ══ (Y5-appropriate — multi-step, unfamiliar contexts, more 2-mark) */
 const R3_BANK=[
-  // 1-mark but wordier
-  {id:'r3-1',type:'input',marks:1,question:"What is the value of the digit 4 in the number 3.408?",answers:[0.4],units:[""]},
-  {id:'r3-2',type:'mcq',marks:1,question:"A sequence follows the rule: multiply by 2 then subtract 1.\nWhat is the next term after 13?",opts:["25","26","27","28"],answers:[0]},
-  {id:'r3-3',type:'input',marks:1,question:"Write the missing number: 4.8 ÷ □ = 0.6",answers:[8],units:[""]},
-  {id:'r3-4',type:'input',marks:1,question:"What percentage of 80 is 28?",answers:[35],units:["%"]},
-  {id:'r3-5',type:'mcq',marks:1,question:"Which number is NOT a common factor of 36 and 48?",opts:["6","9","12","4"],answers:[1]},
-  {id:'r3-6',type:'input',marks:1,question:"A thermometer reads −8°C. The temperature rises by 13°C. What is the new temperature?",answers:[5],units:["°C"]},
-  {id:'r3-7',type:'input',marks:1,question:"An isosceles triangle has two equal angles of 65°. What is the third angle?",answers:[50],units:["°"]},
-  {id:'r3-8',type:'mcq',marks:1,question:"A tap drips at 15 ml per minute. How many litres does it drip in 8 hours?",opts:["7.2 litres","72 litres","720 ml","7,200 ml"],answers:[0]},
-  {id:'r3-9',type:'input',marks:1,question:"What is the LCM (lowest common multiple) of 8 and 12?",answers:[24],units:[""]},
-  {id:'r3-10',type:'input',marks:1,question:"Write the missing number: □ ÷ 9 = 53 remainder 4",answers:[481],units:[""]},
-  // 2-mark multi-step
-  {id:'r3-11',type:'input',marks:2,context:"A school trip has 196 children. Each minibus holds 14 children. Minibus hire costs £65 per bus. Each child also pays £3.50 for a packed lunch.",question:"What is the total cost of minibuses AND packed lunches for all children?",answers:[1541],units:["£"]},
-  {id:'r3-12',type:'input',marks:2,context:"A water tank holds 450 litres when full. It is currently 2/5 full. Water is added until the tank is 9/10 full.",question:"How many litres of water were added?",answers:[225],units:["litres"]},
-  {id:'r3-13',type:'input',marks:2,context:"On Monday a shop sold 248 items. On Tuesday it sold 15% more than Monday. On Wednesday it sold 30 fewer than Tuesday.",question:"How many items were sold on Wednesday?",answers:[255],units:["items"]},
-  {id:'r3-14',type:'input2',marks:2,context:"Aisha and Ben share money in the ratio 3:5. Ben receives £40 more than Aisha.",question:"How much money does each person receive?",labels:["Aisha","Ben"],answers:[60,100],units:["£","£"]},
-  {id:'r3-15',type:'input',marks:2,context:"A recipe uses flour, butter, and sugar in the ratio 4:3:2. Altogether, 360 g of ingredients are used.",question:"How much flour is used?",answers:[160],units:["g"]},
-  {id:'r3-16',type:'input',marks:2,context:"A rectangle has an area of 336 cm². Its length is 3 times its width.",question:"What is the perimeter of the rectangle?",answers:[112],units:["cm"]},
-  {id:'r3-17',type:'input',marks:2,context:"A car uses 6.5 litres of fuel per 100 km. Fuel costs £1.60 per litre.",question:"How much does it cost to drive 400 km? Give your answer in pounds.",answers:[41.6],units:["£"]},
-  {id:'r3-18',type:'input',marks:2,context:"Three friends collect money for charity. Alice collects £34.50, Ben collects £1.75 more than Alice, and Cara collects twice as much as Alice.",question:"How much do they collect altogether?",answers:[140.5],units:["£"]},
-  // Sequence / pattern
-  {id:'r3-19',type:'input',marks:2,question:"Here is a sequence: 4, 13, 31, 67, ___\nThe rule is: multiply by 2 then add 5.\nWhat is the next term?",answers:[139],units:[""]},
-  {id:'r3-20',type:'input',marks:2,question:"A square grid is 6 × 6. The number of dots on the perimeter follows a pattern. How many dots are on the perimeter of a 10 × 10 grid?",answers:[36],units:["dots"]},
-  // Algebra / unknowns
-  {id:'r3-21',type:'input',marks:1,question:"If 3a + 7 = 28, what is the value of a?",answers:[7],units:[""]},
-  {id:'r3-22',type:'input',marks:1,question:"n = 4. What is the value of 5n − 8?",answers:[12],units:[""]},
-  {id:'r3-23',type:'input',marks:2,context:"Pens cost p pence each. Rulers cost 3p pence each. Maya buys 4 pens and 2 rulers and pays 200p altogether.",question:"What is the cost of one pen?",answers:[20],units:["p"]},
-  // Fractions / decimals / percentages harder
-  {id:'r3-24',type:'input',marks:1,question:"What is 0.4 × 0.3?",answers:[0.12],units:[""]},
-  {id:'r3-25',type:'mcq',marks:1,question:"A price increased by 20% to £72. What was the original price?",opts:["£56","£57.60","£60","£62"],answers:[2]},
-  {id:'r3-26',type:'input',marks:2,context:"A jacket costs £85. In a sale it is reduced by 30%. The next week the sale price is reduced by a further 10%.",question:"What is the final price of the jacket?",answers:[53.55],units:["£"]},
-  {id:'r3-27',type:'input',marks:1,question:"Express 48/60 in its simplest form as a fraction (write as decimal).",answers:[0.8],units:[""]},
-  // Statistics
-  {id:'r3-28',type:'input',marks:2,context:"Six children's heights in cm: 142, 138, 145, 139, 148, 144.",question:"What is the mean height?",answers:[142.67],units:["cm (to 2 dp)"]},
-  {id:'r3-29',type:'input',marks:1,question:"The range of 7 numbers is 18. The smallest number is 24. What is the largest number?",answers:[42],units:[""]},
-  {id:'r3-30',type:'mcq',marks:1,question:"A spinner has 8 equal sections: 3 red, 2 blue, 3 green. What is the probability of NOT spinning red?",opts:["3/8","5/8","1/4","3/4"],answers:[1]},
-  // EXTRAS
-  {id:'r3-31',type:'input',marks:2,context:"A swimming pool is 50 m long. Tom swims 36 lengths.",question:"How many kilometres does Tom swim?",answers:[1.8],units:["km"]},
-  {id:'r3-32',type:'input',marks:1,question:"A regular hexagon has a perimeter of 54 cm. What is the length of one side?",answers:[9],units:["cm"]},
-  {id:'r3-33',type:'input',marks:2,context:"Two buses leave a station. Bus A leaves every 15 minutes. Bus B leaves every 20 minutes. They both leave at 9:00 am.",question:"What is the next time both buses leave together?",answers:[10],units:[":00 am"]},
-  {id:'r3-34',type:'input',marks:1,question:"What is 1/8 expressed as a percentage?",answers:[12.5],units:["%"]},
-  {id:'r3-35',type:'input',marks:2,context:"A rectangular garden is 12 m long and 8 m wide. A path 1 m wide runs around the outside of the garden.",question:"What is the area of just the path?",answers:[44],units:["m²"]},
+// NUMBER & PLACE VALUE — wordier 1-mark
+{id:‘r3-1’,type:‘input’,marks:1,question:“A number is multiplied by 100. The answer is 34,700. What is the number?”,answers:[347],units:[””]},
+{id:‘r3-2’,type:‘mcq’,marks:1,question:“Which of these numbers is closest to 50,000?”,opts:[“49,506”,“50,498”,“50,401”,“49,499”],answers:[3]},
+{id:‘r3-3’,type:‘input’,marks:1,question:“Write the missing number.\n6,000 = □ × 100”,answers:[60],units:[””]},
+{id:‘r3-4’,type:‘mcq’,marks:1,question:“A number rounded to the nearest 1,000 is 24,000. Which could be the number?”,opts:[“23,412”,“24,601”,“23,099”,“22,987”],answers:[0]},
+// ADDITION & SUBTRACTION — multi-step 1-mark
+{id:‘r3-5’,type:‘input’,marks:1,question:“A shop takes £3,456 on Saturday and £2,879 on Sunday.\nHow much more did it take on Saturday than Sunday?”,answers:[577],units:[“£”]},
+{id:‘r3-6’,type:‘input’,marks:1,question:“A number is 1,250 less than 10,000. What is the number?”,answers:[8750],units:[””]},
+{id:‘r3-7’,type:‘mcq’,marks:1,question:“Which calculation gives the largest answer?”,opts:[“5,000 − 1,836”,“4,200 − 356”,“3,999 − 200”,“6,000 − 2,400”],answers:[0]},
+// MULTIPLICATION & DIVISION — multi-step 1-mark
+{id:‘r3-8’,type:‘input’,marks:1,question:“Eggs come in boxes of 12. A bakery orders 15 boxes. How many eggs is that?”,answers:[180],units:[“eggs”]},
+{id:‘r3-9’,type:‘input’,marks:1,question:“A number multiplied by 8 gives 312. What is the number?”,answers:[39],units:[””]},
+{id:‘r3-10’,type:‘mcq’,marks:1,question:“A baker makes 336 rolls and puts them equally into bags of 8. How many bags?”,opts:[“38”,“40”,“42”,“44”],answers:[2]},
+{id:‘r3-11’,type:‘input’,marks:1,question:“What is the remainder when 250 is divided by 7?”,answers:[5],units:[””]},
+// FRACTIONS — finding the whole from a part
+{id:‘r3-12’,type:‘input’,marks:1,question:“¼ of a number is 17. What is the number?”,answers:[68],units:[””]},
+{id:‘r3-13’,type:‘input’,marks:1,question:“⅓ of a bag of sweets is 24. How many sweets are in the full bag?”,answers:[72],units:[“sweets”]},
+{id:‘r3-14’,type:‘mcq’,marks:1,question:“Which fraction is greater than ½ but less than ¾?”,opts:[“3/8”,“2/5”,“3/5”,“4/5”],answers:[2]},
+{id:‘r3-15’,type:‘mcq’,marks:1,question:“A pizza is cut into 8 equal slices. Tom eats 3 slices and Sara eats 2 slices. What fraction of the pizza is left?”,opts:[“2/8”,“3/8”,“4/8”,“5/8”],answers:[1]},
+// PERCENTAGES — 25%, 50%, 10%, 75%
+{id:‘r3-16’,type:‘input’,marks:1,question:“A coat costs £64. It is reduced by 25% in a sale. What is the sale price?”,answers:[48],units:[“£”]},
+{id:‘r3-17’,type:‘mcq’,marks:1,question:“In a class of 32 children, 75% walk to school. How many children walk?”,opts:[“20”,“22”,“24”,“26”],answers:[2]},
+// MEASUREMENT — multi-step 1-mark
+{id:‘r3-18’,type:‘input’,marks:1,question:“A piece of wood is 3.5 m long. Tom cuts off 85 cm. How many centimetres of wood are left?”,answers:[265],units:[“cm”]},
+{id:‘r3-19’,type:‘input’,marks:1,question:“A bottle holds 1.5 litres. How many 250 ml glasses can be filled from it?”,answers:[6],units:[“glasses”]},
+{id:‘r3-20’,type:‘mcq’,marks:1,question:“A film starts at 3:45 pm and lasts 1 hour 35 minutes. What time does it end?”,opts:[“4:55 pm”,“5:10 pm”,“5:20 pm”,“5:25 pm”],answers:[2]},
+// GEOMETRY — angles and perimeter
+{id:‘r3-21’,type:‘input’,marks:1,question:“A triangle has angles of 48° and 73°. What is the third angle?”,answers:[59],units:[“°”]},
+{id:‘r3-22’,type:‘input’,marks:1,question:“A regular pentagon has a perimeter of 45 cm. What is the length of one side?”,answers:[9],units:[“cm”]},
+// SEQUENCES
+{id:‘r3-23’,type:‘input’,marks:1,question:“The rule for a sequence is: add 7 each time.\nThe 4th term is 33. What is the 1st term?”,answers:[12],units:[””]},
+{id:‘r3-24’,type:‘mcq’,marks:1,question:“Here is a sequence: 2, 6, 18, 54, ___\nWhat is the next term?”,opts:[“108”,“162”,“216”,“270”],answers:[1]},
+// 2-MARK MULTI-STEP (genuine Y5 difficulty)
+{id:‘r3-25’,type:‘input’,marks:2,context:“A school buys 24 packs of pencils. Each pack contains 12 pencils. The pencils are shared equally between 9 classes.”,question:“How many pencils does each class get?”,answers:[32],units:[“pencils”]},
+{id:‘r3-26’,type:‘input’,marks:2,context:“Mia saves £4.50 per week. Jack saves £3.75 per week.”,question:“How much more than Jack does Mia save over 8 weeks?”,answers:[6],units:[“£”]},
+{id:‘r3-27’,type:‘input2’,marks:2,context:“A rectangular field is 45 m long and 28 m wide.”,question:“What is the perimeter and the area of the field?”,labels:[“Perimeter”,“Area”],answers:[146,1260],units:[“m”,“m²”]},
+{id:‘r3-28’,type:‘input’,marks:2,context:“A bag of 5 apples costs £1.20. A bag of 4 oranges costs £1.00.”,question:“What is the total cost of 15 apples and 12 oranges?”,answers:[6.6],units:[“£”]},
+{id:‘r3-29’,type:‘input’,marks:2,context:“A train leaves at 09:15 and arrives at 11:48.”,question:“How long is the journey in minutes?”,answers:[153],units:[“minutes”]},
+{id:‘r3-30’,type:‘input’,marks:2,context:“There are 360 children in a school. ¼ go home for lunch. ½ have a packed lunch. The rest have a school dinner.”,question:“How many children have a school dinner?”,answers:[90],units:[“children”]},
+{id:‘r3-31’,type:‘input’,marks:2,context:“A rectangle has a perimeter of 54 cm. Its length is 17 cm.”,question:“What is the area of the rectangle?”,answers:[170],units:[“cm²”]},
+{id:‘r3-32’,type:‘input’,marks:2,context:“Tickets to a theme park cost £18 for adults and £12 for children. A family buys 2 adult tickets and 3 child tickets.”,question:“How much do the tickets cost in total?”,answers:[72],units:[“£”]},
+{id:‘r3-33’,type:‘input’,marks:2,context:“A number pattern: 5, 8, 14, 26, 50, …\nThe rule is: double the previous term, then subtract 2.”,question:“What is the next term in the sequence?”,answers:[98],units:[””]},
+{id:‘r3-34’,type:‘input’,marks:2,context:“Three children measure their heights. Anna is 138 cm. Ben is 7 cm taller than Anna. Cara is 5 cm shorter than Ben.”,question:“What is the mean height of the three children?”,answers:[140],units:[“cm”]},
+{id:‘r3-35’,type:‘input’,marks:2,context:“A shop sells 125 ml cans of juice for 45p each, or a 1 litre carton for £2.80.”,question:“How much cheaper per 125 ml is the carton compared to the can?”,answers:[10],units:[“p”]},
 ];
 
 /* ══ HELPERS ══ */
-function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=0|Math.random()*(i+1);[b[i],b[j]]=[b[j],b[i]];}return b;}
+function shuffle(a){const b=[…a];for(let i=b.length-1;i>0;i–){const j=0|Math.random()*(i+1);[b[i],b[j]]=[b[j],b[i]];}return b;}
 function pick(a,n){return shuffle(a).slice(0,n);}
 function el(tag,cls){const e=document.createElement(tag);if(cls)e.className=cls;return e;}
 
 /* ══ STATE ══ */
 let allQs=[],matchStates=[],orderStates=[];
-let timerInterval,seconds=30*60,pupilName='',variantCode='',selectedTest='',totalMarks=40;
+let timerInterval,seconds=30*60,pupilName=’’,variantCode=’’,selectedTest=’’,totalMarks=40;
 let currentArith=[],currentMatch=[],currentOrder=[],currentR2=[],currentR3=[];
 
 /* ══ TEST SELECTION ══ */
 function selectTest(t){
-  selectedTest=t;
-  ['arith','r2','r3'].forEach(k=>document.getElementById('tc-'+k).classList.remove('selected'));
-  document.getElementById('tc-'+t).classList.add('selected');
-  document.getElementById('btn-start').disabled=false;
-  document.getElementById('btn-start').textContent='Start the test →';
+selectedTest=t;
+[‘arith’,‘r2’,‘r3’].forEach(k=>document.getElementById(‘tc-’+k).classList.remove(‘selected’));
+document.getElementById(‘tc-’+t).classList.add(‘selected’);
+document.getElementById(‘btn-start’).disabled=false;
+document.getElementById(‘btn-start’).textContent=‘Start the test →’;
 }
 
 /* ══ GENERATE (rotates questions each call) ══ */
 function generateTest(){
-  variantCode='Test #'+(0|Math.random()*9000+1000);
-  document.getElementById('variant-badge').textContent=variantCode;
-  // Arithmetic
-  currentArith=Object.entries(ARITH_BANK).map(([t,p])=>({title:t,qs:pick(p,8)}));
-  currentMatch=pick(MATCH_BANK,4);
-  currentOrder=pick(ORDER_BANK,4);
-  // Reasoning — pick 20 from first 25 single-mark, then all 5 2-mark (for ~35 marks)
-  currentR2=buildReasoningSet(R2_BANK,35);
-  currentR3=buildReasoningSet(R3_BANK,35);
+variantCode=‘Test #’+(0|Math.random()*9000+1000);
+document.getElementById(‘variant-badge’).textContent=variantCode;
+// Arithmetic
+currentArith=Object.entries(ARITH_BANK).map(([t,p])=>({title:t,qs:pick(p,8)}));
+currentMatch=pick(MATCH_BANK,4);
+currentOrder=pick(ORDER_BANK,4);
+// Reasoning — pick 20 from first 25 single-mark, then all 5 2-mark (for ~35 marks)
+currentR2=buildReasoningSet(R2_BANK,35);
+currentR3=buildReasoningSet(R3_BANK,35);
 }
 
 function buildReasoningSet(bank,targetMarks){
-  // Separate 1-mark and 2-mark questions
-  const ones=shuffle(bank.filter(q=>q.marks===1));
-  const twos=shuffle(bank.filter(q=>q.marks===2));
-  const picked=[];
-  let total=0;
-  // Add 2-mark questions first (up to 5)
-  for(const q of twos){if(total+2<=targetMarks-10){picked.push(q);total+=2;}}
-  // Fill with 1-mark questions
-  for(const q of ones){if(total+1<=targetMarks){picked.push(q);total+=1;}}
-  return shuffle(picked);
+// Separate 1-mark and 2-mark questions
+const ones=shuffle(bank.filter(q=>q.marks===1));
+const twos=shuffle(bank.filter(q=>q.marks===2));
+const picked=[];
+let total=0;
+// Add 2-mark questions first (up to 5)
+for(const q of twos){if(total+2<=targetMarks-10){picked.push(q);total+=2;}}
+// Fill with 1-mark questions
+for(const q of ones){if(total+1<=targetMarks){picked.push(q);total+=1;}}
+return shuffle(picked);
 }
 
 /* ══ BUILD DOM ══ */
 function buildTest(){
-  const area=document.getElementById('test-area');
-  area.innerHTML='';allQs=[];matchStates=[];orderStates=[];
-  let num=0;
+const area=document.getElementById(‘test-area’);
+area.innerHTML=’’;allQs=[];matchStates=[];orderStates=[];
+let num=0;
 
-  if(selectedTest==='arith'){
-    totalMarks=40;
-    document.getElementById('header-title').textContent='Year 5 Arithmetic Test';
-    document.getElementById('header-sub').textContent='40 questions · 30 minutes · Based on NFER format';
-    seconds=30*60;
-    currentArith.forEach(sec=>{
-      const h=el('div','section-title');h.textContent=sec.title;area.appendChild(h);
-      const grid=el('div','q-grid');
-      sec.qs.forEach(q=>{
-        num++;allQs.push({type:'arith',q:q.q,a:q.a,num,section:sec.title});
-        const card=el('div','q-card');
-        card.innerHTML=`<span class="q-num">${num}.</span><span class="q-text">${q.q} =</span>`+
-          `<input class="q-input" type="text" id="q${num}" inputmode="decimal" autocomplete="off" oninput="updateProgress()">`+
-          `<span class="q-check" id="chk${num}"></span>`;
-        grid.appendChild(card);
-      });
-      area.appendChild(grid);
-    });
-    const mh=el('div','section-title');mh.textContent='Match Equivalent Values';area.appendChild(mh);
-    currentMatch.forEach((m,mi)=>{
-      num++;
-      const state={num,done:false,pairs:{},selLeft:null,data:m};
-      matchStates.push(state);
-      allQs.push({type:'match',num,section:'Match Equivalent Values',mi:matchStates.length-1});
-      area.appendChild(buildMatchDOM(m,state,num,mi));
-    });
-    const oh=el('div','section-title');oh.textContent='Order These Numbers';area.appendChild(oh);
-    currentOrder.forEach((o,oi)=>{
-      num++;
-      const state={num,done:false,placed:[],data:o};
-      orderStates.push(state);
-      allQs.push({type:'order',num,section:'Order These Numbers',oi:orderStates.length-1});
-      area.appendChild(buildOrderDOM(o,state,num,oi));
-    });
+if(selectedTest===‘arith’){
+totalMarks=40;
+document.getElementById(‘header-title’).textContent=‘Year 5 Arithmetic Test’;
+document.getElementById(‘header-sub’).textContent=‘40 questions · 30 minutes · Based on NFER format’;
+seconds=30*60;
+currentArith.forEach(sec=>{
+const h=el(‘div’,‘section-title’);h.textContent=sec.title;area.appendChild(h);
+const grid=el(‘div’,‘q-grid’);
+sec.qs.forEach(q=>{
+num++;allQs.push({type:‘arith’,q:q.q,a:q.a,num,section:sec.title});
+const card=el(‘div’,‘q-card’);
+card.innerHTML=`<span class="q-num">${num}.</span><span class="q-text">${q.q} =</span>`+
+`<input class="q-input" type="text" id="q${num}" inputmode="decimal" autocomplete="off" oninput="updateProgress()">`+
+`<span class="q-check" id="chk${num}"></span>`;
+grid.appendChild(card);
+});
+area.appendChild(grid);
+});
+const mh=el(‘div’,‘section-title’);mh.textContent=‘Match Equivalent Values’;area.appendChild(mh);
+currentMatch.forEach((m,mi)=>{
+num++;
+const state={num,done:false,pairs:{},selLeft:null,data:m};
+matchStates.push(state);
+allQs.push({type:‘match’,num,section:‘Match Equivalent Values’,mi:matchStates.length-1});
+area.appendChild(buildMatchDOM(m,state,num,mi));
+});
+const oh=el(‘div’,‘section-title’);oh.textContent=‘Order These Numbers’;area.appendChild(oh);
+currentOrder.forEach((o,oi)=>{
+num++;
+const state={num,done:false,placed:[],data:o};
+orderStates.push(state);
+allQs.push({type:‘order’,num,section:‘Order These Numbers’,oi:orderStates.length-1});
+area.appendChild(buildOrderDOM(o,state,num,oi));
+});
 
-  } else {
-    const bank=selectedTest==='r2'?currentR2:currentR3;
-    const testLabel=selectedTest==='r2'?'Reasoning Test 2':'Reasoning Test 3';
-    const totalQ=bank.reduce((s,q)=>s+q.marks,0);
-    totalMarks=totalQ;
-    seconds=40*60;
-    document.getElementById('header-title').textContent='Year 5 '+testLabel;
-    document.getElementById('header-sub').textContent=totalMarks+' marks · 40 minutes · Based on NFER format';
-    document.getElementById('res-denom').textContent='out of '+totalMarks;
+} else {
+const bank=selectedTest===‘r2’?currentR2:currentR3;
+const testLabel=selectedTest===‘r2’?‘Reasoning Test 2’:‘Reasoning Test 3’;
+const totalQ=bank.reduce((s,q)=>s+q.marks,0);
+totalMarks=totalQ;
+seconds=40*60;
+document.getElementById(‘header-title’).textContent=‘Year 5 ‘+testLabel;
+document.getElementById(‘header-sub’).textContent=totalMarks+’ marks · 40 minutes · Based on NFER format’;
+document.getElementById(‘res-denom’).textContent=’out of ’+totalMarks;
 
-    bank.forEach((q,qi)=>{
-      num++;
-      allQs.push({type:'reasoning',id:q.id,num,marks:q.marks,data:q,section:q.type==='mcq'?'Multiple Choice':'Short Answer'});
-      area.appendChild(buildReasoningDOM(q,num,qi));
-    });
-  }
+```
+bank.forEach((q,qi)=>{
+  num++;
+  allQs.push({type:'reasoning',id:q.id,num,marks:q.marks,data:q,section:q.type==='mcq'?'Multiple Choice':'Short Answer'});
+  area.appendChild(buildReasoningDOM(q,num,qi));
+});
+```
 
-  const td=document.getElementById('timer');
-  const mm=Math.floor(seconds/60);
-  td.textContent=mm+':00';
-  document.getElementById('answered').textContent='0 / '+totalMarks;
-  document.getElementById('res-denom').textContent='out of '+totalMarks;
-  updateProgress();
+}
+
+const td=document.getElementById(‘timer’);
+const mm=Math.floor(seconds/60);
+td.textContent=mm+’:00’;
+document.getElementById(‘answered’).textContent=’0 / ’+totalMarks;
+document.getElementById(‘res-denom’).textContent=’out of ’+totalMarks;
+updateProgress();
 }
 
 /* ══ REASONING DOM ══ */
 function buildReasoningDOM(q,num,qi){
-  const card=el('div','r-card');card.id='rcard-'+qi;
-  const marksClass=q.marks===2?'m2':'m1';
-  const marksLabel=q.marks===2?'2 marks':'1 mark';
+const card=el(‘div’,‘r-card’);card.id=‘rcard-’+qi;
+const marksClass=q.marks===2?‘m2’:‘m1’;
+const marksLabel=q.marks===2?‘2 marks’:‘1 mark’;
 
-  let html=`<div class="r-header"><span class="r-qnum">${num}.</span><span class="r-marks ${marksClass}">${marksLabel}</span></div>`;
-  if(q.context) html+=`<div class="r-context">${q.context.replace(/\n/g,'<br>')}</div>`;
-  html+=`<div class="r-question">${q.question.replace(/\n/g,'<br>')}</div>`;
+let html=`<div class="r-header"><span class="r-qnum">${num}.</span><span class="r-marks ${marksClass}">${marksLabel}</span></div>`;
+if(q.context) html+=`<div class="r-context">${q.context.replace(/\n/g,'<br>')}</div>`;
+html+=`<div class="r-question">${q.question.replace(/\n/g,'<br>')}</div>`;
 
-  if(q.type==='mcq'){
-    html+=`<div class="mcq-opts" id="mcq-${qi}">`;
-    q.opts.forEach((opt,oi)=>{
-      html+=`<div class="mcq-opt" data-qi="${qi}" data-oi="${oi}" onclick="mcqClick(${qi},${oi})">${opt}</div>`;
-    });
-    html+=`</div>`;
-  } else if(q.type==='input'){
-    html+=`<div class="r-input-row">`;
-    if(q.units&&q.units[0]==='£') html+=`<span class="r-unit">£</span>`;
-    html+=`<input class="r-input" type="text" id="rinp-${qi}" inputmode="decimal" autocomplete="off" oninput="updateProgress()" placeholder="answer">`;
-    if(q.units&&q.units[0]&&q.units[0]!=='£') html+=`<span class="r-unit">${q.units[0]}</span>`;
-    html+=`<span class="r-check" id="rchk-${qi}"></span></div>`;
-  } else if(q.type==='input2'){
-    html+=`<div class="r-input-row" style="gap:16px;align-items:flex-start">`;
-    q.labels.forEach((lbl,li)=>{
-      html+=`<div class="r-input-block">`;
-      if(q.units&&q.units[li]==='£') html+=`<span class="r-unit">£</span>`;
-      html+=`<input class="r-input" type="text" id="rinp-${qi}-${li}" inputmode="decimal" autocomplete="off" oninput="updateProgress()" placeholder="${lbl}">`;
-      if(q.units&&q.units[li]&&q.units[li]!=='£') html+=`<span class="r-label">${q.units[li]}</span>`;
-      html+=`<span class="r-label">${lbl}</span></div>`;
-    });
-    html+=`<span class="r-check" id="rchk-${qi}" style="align-self:center"></span></div>`;
-  }
+if(q.type===‘mcq’){
+html+=`<div class="mcq-opts" id="mcq-${qi}">`;
+q.opts.forEach((opt,oi)=>{
+html+=`<div class="mcq-opt" data-qi="${qi}" data-oi="${oi}" onclick="mcqClick(${qi},${oi})">${opt}</div>`;
+});
+html+=`</div>`;
+} else if(q.type===‘input’){
+html+=`<div class="r-input-row">`;
+if(q.units&&q.units[0]===‘£’) html+=`<span class="r-unit">£</span>`;
+html+=`<input class="r-input" type="text" id="rinp-${qi}" inputmode="decimal" autocomplete="off" oninput="updateProgress()" placeholder="answer">`;
+if(q.units&&q.units[0]&&q.units[0]!==‘£’) html+=`<span class="r-unit">${q.units[0]}</span>`;
+html+=`<span class="r-check" id="rchk-${qi}"></span></div>`;
+} else if(q.type===‘input2’){
+html+=`<div class="r-input-row" style="gap:16px;align-items:flex-start">`;
+q.labels.forEach((lbl,li)=>{
+html+=`<div class="r-input-block">`;
+if(q.units&&q.units[li]===‘£’) html+=`<span class="r-unit">£</span>`;
+html+=`<input class="r-input" type="text" id="rinp-${qi}-${li}" inputmode="decimal" autocomplete="off" oninput="updateProgress()" placeholder="${lbl}">`;
+if(q.units&&q.units[li]&&q.units[li]!==‘£’) html+=`<span class="r-label">${q.units[li]}</span>`;
+html+=`<span class="r-label">${lbl}</span></div>`;
+});
+html+=`<span class="r-check" id="rchk-${qi}" style="align-self:center"></span></div>`;
+}
 
-  card.innerHTML=html;
-  return card;
+card.innerHTML=html;
+return card;
 }
 
 /* MCQ click */
 const mcqSelections={};
 function mcqClick(qi,oi){
-  const opts=document.querySelectorAll(`#mcq-${qi} .mcq-opt`);
-  opts.forEach(o=>o.classList.remove('selected'));
-  opts[oi].classList.add('selected');
-  mcqSelections[qi]=oi;
-  updateProgress();
+const opts=document.querySelectorAll(`#mcq-${qi} .mcq-opt`);
+opts.forEach(o=>o.classList.remove(‘selected’));
+opts[oi].classList.add(‘selected’);
+mcqSelections[qi]=oi;
+updateProgress();
 }
 
 /* ══ MATCH DOM & LOGIC ══ */
 function buildMatchDOM(m,state,num,mi){
-  const wrap=el('div','match-wrapper');wrap.id='mwrap-'+mi;
-  const rOrder=shuffle([0,1,2,3]);state.rOrder=rOrder;
-  wrap.innerHTML=`<div class="match-header"><span class="q-num">${num}.</span><span class="match-instruction">${m.lbl} — tap a left value, then tap its match on the right</span></div>`+
-    `<div class="match-cols"><div class="match-col" id="mleft-${mi}"></div>`+
-    `<div class="match-mid"><svg class="match-svg" id="msvg-${mi}"></svg></div>`+
-    `<div class="match-col match-col-right" id="mright-${mi}"></div></div>`+
-    `<div class="match-status" id="mstat-${mi}"></div>`;
-  const lc=wrap.querySelector('#mleft-'+mi),rc=wrap.querySelector('#mright-'+mi);
-  m.left.forEach((lbl,li)=>{
-    const p=el('div','match-pill');p.dataset.li=li;p.dataset.mi=mi;p.textContent=lbl;
-    p.onclick=()=>mClickLeft(li,mi,state);lc.appendChild(p);
-  });
-  rOrder.forEach(ri=>{
-    const p=el('div','match-pill');p.dataset.ri=ri;p.dataset.mi=mi;p.textContent=m.right[ri];
-    p.onclick=()=>mClickRight(ri,mi,state);rc.appendChild(p);
-  });
-  return wrap;
+const wrap=el(‘div’,‘match-wrapper’);wrap.id=‘mwrap-’+mi;
+const rOrder=shuffle([0,1,2,3]);state.rOrder=rOrder;
+wrap.innerHTML=`<div class="match-header"><span class="q-num">${num}.</span><span class="match-instruction">${m.lbl} — tap a left value, then tap its match on the right</span></div>`+
+`<div class="match-cols"><div class="match-col" id="mleft-${mi}"></div>`+
+`<div class="match-mid"><svg class="match-svg" id="msvg-${mi}"></svg></div>`+
+`<div class="match-col match-col-right" id="mright-${mi}"></div></div>`+
+`<div class="match-status" id="mstat-${mi}"></div>`;
+const lc=wrap.querySelector(’#mleft-’+mi),rc=wrap.querySelector(’#mright-’+mi);
+m.left.forEach((lbl,li)=>{
+const p=el(‘div’,‘match-pill’);p.dataset.li=li;p.dataset.mi=mi;p.textContent=lbl;
+p.onclick=()=>mClickLeft(li,mi,state);lc.appendChild(p);
+});
+rOrder.forEach(ri=>{
+const p=el(‘div’,‘match-pill’);p.dataset.ri=ri;p.dataset.mi=mi;p.textContent=m.right[ri];
+p.onclick=()=>mClickRight(ri,mi,state);rc.appendChild(p);
+});
+return wrap;
 }
 function mClickLeft(li,mi,state){
-  if(state.done)return;
-  document.querySelectorAll(`#mwrap-${mi} .match-pill[data-li]`).forEach(p=>{if(!p.classList.contains('matched'))p.classList.remove('selected');});
-  state.selLeft=li;
-  const pill=document.querySelector(`#mwrap-${mi} .match-pill[data-li="${li}"]`);
-  if(pill)pill.classList.add('selected');
+if(state.done)return;
+document.querySelectorAll(`#mwrap-${mi} .match-pill[data-li]`).forEach(p=>{if(!p.classList.contains(‘matched’))p.classList.remove(‘selected’);});
+state.selLeft=li;
+const pill=document.querySelector(`#mwrap-${mi} .match-pill[data-li="${li}"]`);
+if(pill)pill.classList.add(‘selected’);
 }
 function mClickRight(ri,mi,state){
-  if(state.done)return;
-  if(state.selLeft===null)return;
-  const li=state.selLeft;
-  const prevRight=state.pairs[li];
-  if(prevRight!==undefined){
-    const old=document.querySelector(`#mwrap-${mi} .match-pill[data-ri="${prevRight}"]`);
-    if(old)old.classList.remove('matched');
-  }
-  Object.entries(state.pairs).forEach(([k,v])=>{
-    if(parseInt(v)===ri&&parseInt(k)!==li){
-      delete state.pairs[parseInt(k)];
-      const lp=document.querySelector(`#mwrap-${mi} .match-pill[data-li="${k}"]`);
-      if(lp)lp.classList.remove('matched','selected');
-    }
-  });
-  state.pairs[li]=ri;state.selLeft=null;
-  document.querySelectorAll(`#mwrap-${mi} .match-pill[data-li]`).forEach(p=>p.classList.remove('selected'));
-  const lp=document.querySelector(`#mwrap-${mi} .match-pill[data-li="${li}"]`);
-  const rp=document.querySelector(`#mwrap-${mi} .match-pill[data-ri="${ri}"]`);
-  if(lp)lp.classList.add('matched');if(rp)rp.classList.add('matched');
-  drawLines(mi,state);
-  if(Object.keys(state.pairs).length===4){state.done=true;const s=document.getElementById('mstat-'+mi);s.textContent='All matched! Submit to see if they\'re correct.';s.style.color='var(--blue2)';updateProgress();}
+if(state.done)return;
+if(state.selLeft===null)return;
+const li=state.selLeft;
+const prevRight=state.pairs[li];
+if(prevRight!==undefined){
+const old=document.querySelector(`#mwrap-${mi} .match-pill[data-ri="${prevRight}"]`);
+if(old)old.classList.remove(‘matched’);
+}
+Object.entries(state.pairs).forEach(([k,v])=>{
+if(parseInt(v)===ri&&parseInt(k)!==li){
+delete state.pairs[parseInt(k)];
+const lp=document.querySelector(`#mwrap-${mi} .match-pill[data-li="${k}"]`);
+if(lp)lp.classList.remove(‘matched’,‘selected’);
+}
+});
+state.pairs[li]=ri;state.selLeft=null;
+document.querySelectorAll(`#mwrap-${mi} .match-pill[data-li]`).forEach(p=>p.classList.remove(‘selected’));
+const lp=document.querySelector(`#mwrap-${mi} .match-pill[data-li="${li}"]`);
+const rp=document.querySelector(`#mwrap-${mi} .match-pill[data-ri="${ri}"]`);
+if(lp)lp.classList.add(‘matched’);if(rp)rp.classList.add(‘matched’);
+drawLines(mi,state);
+if(Object.keys(state.pairs).length===4){state.done=true;const s=document.getElementById(‘mstat-’+mi);s.textContent=‘All matched! Submit to see if they're correct.’;s.style.color=‘var(–blue2)’;updateProgress();}
 }
 function drawLines(mi,state,colours){
-  const svg=document.getElementById('msvg-'+mi);
-  const sr=svg.getBoundingClientRect();svg.innerHTML='';
-  const wrap=document.getElementById('mwrap-'+mi);
-  Object.entries(state.pairs).forEach(([li,ri])=>{
-    li=parseInt(li);ri=parseInt(ri);
-    const lp=wrap.querySelector(`.match-pill[data-li="${li}"]`);
-    const rp=wrap.querySelector(`.match-pill[data-ri="${ri}"]`);
-    if(!lp||!rp)return;
-    const lr=lp.getBoundingClientRect(),rr=rp.getBoundingClientRect();
-    const x1=lr.right-sr.left,y1=(lr.top+lr.height/2)-sr.top;
-    const x2=rr.left-sr.left,y2=(rr.top+rr.height/2)-sr.top;
-    const ln=document.createElementNS('http://www.w3.org/2000/svg','line');
-    ln.setAttribute('x1',x1);ln.setAttribute('y1',y1);ln.setAttribute('x2',x2);ln.setAttribute('y2',y2);
-    const col=colours?colours[li]:'#2d6be4';
-    ln.setAttribute('stroke',col);ln.setAttribute('stroke-width','2.5');ln.setAttribute('stroke-linecap','round');
-    svg.appendChild(ln);
-  });
+const svg=document.getElementById(‘msvg-’+mi);
+const sr=svg.getBoundingClientRect();svg.innerHTML=’’;
+const wrap=document.getElementById(‘mwrap-’+mi);
+Object.entries(state.pairs).forEach(([li,ri])=>{
+li=parseInt(li);ri=parseInt(ri);
+const lp=wrap.querySelector(`.match-pill[data-li="${li}"]`);
+const rp=wrap.querySelector(`.match-pill[data-ri="${ri}"]`);
+if(!lp||!rp)return;
+const lr=lp.getBoundingClientRect(),rr=rp.getBoundingClientRect();
+const x1=lr.right-sr.left,y1=(lr.top+lr.height/2)-sr.top;
+const x2=rr.left-sr.left,y2=(rr.top+rr.height/2)-sr.top;
+const ln=document.createElementNS(‘http://www.w3.org/2000/svg’,‘line’);
+ln.setAttribute(‘x1’,x1);ln.setAttribute(‘y1’,y1);ln.setAttribute(‘x2’,x2);ln.setAttribute(‘y2’,y2);
+const col=colours?colours[li]:’#2d6be4’;
+ln.setAttribute(‘stroke’,col);ln.setAttribute(‘stroke-width’,‘2.5’);ln.setAttribute(‘stroke-linecap’,‘round’);
+svg.appendChild(ln);
+});
 }
 
 /* ══ ORDER DOM & LOGIC ══ */
 function buildOrderDOM(o,state,num,oi){
-  const wrap=el('div','order-wrapper');wrap.id='owrap-'+oi;
-  const shuffled=shuffle(o.vals.map((v,i)=>({v,i})));state.shuffled=shuffled;
-  const nth=['st','nd','rd','th'];
-  const firstLbl=o.dir==='desc'?'1st (largest)':'1st (smallest)';
-  const lastLbl=o.dir==='desc'?'4th (smallest)':'4th (largest)';
-  const slots=[0,1,2,3].map(i=>`<div class="order-slot" id="oslot-${oi}-${i}"><span style="font-size:.65rem;color:var(--muted)">${i+1}${nth[i]}</span></div>`).join('<span class="order-arrow">›</span>');
-  wrap.innerHTML=`<div class="order-header"><span class="q-num">${num}.</span><span class="order-instruction">${o.lbl}</span></div>`+
-    `<div class="order-hint">Tap a number below to place it in order. Tap a dimmed number to remove it from its slot.</div>`+
-    `<div class="order-labels"><span>${firstLbl}</span><span>${lastLbl}</span></div>`+
-    `<div class="order-slots">${slots}</div>`+
-    `<div class="order-hint">Choose from:</div>`+
-    `<div class="order-bank" id="obank-${oi}"></div>`+
-    `<div class="order-status" id="ostat-${oi}"></div>`;
-  const bank=wrap.querySelector('#obank-'+oi);
-  shuffled.forEach(({v,i})=>{
-    const t=el('div','order-tile');t.id=`otile-${oi}-${i}`;t.textContent=v;
-    t.onclick=()=>oClick(oi,i,state);bank.appendChild(t);
-  });
-  return wrap;
+const wrap=el(‘div’,‘order-wrapper’);wrap.id=‘owrap-’+oi;
+const shuffled=shuffle(o.vals.map((v,i)=>({v,i})));state.shuffled=shuffled;
+const nth=[‘st’,‘nd’,‘rd’,‘th’];
+const firstLbl=o.dir===‘desc’?‘1st (largest)’:‘1st (smallest)’;
+const lastLbl=o.dir===‘desc’?‘4th (smallest)’:‘4th (largest)’;
+const slots=[0,1,2,3].map(i=>`<div class="order-slot" id="oslot-${oi}-${i}"><span style="font-size:.65rem;color:var(--muted)">${i+1}${nth[i]}</span></div>`).join(’<span class="order-arrow">›</span>’);
+wrap.innerHTML=`<div class="order-header"><span class="q-num">${num}.</span><span class="order-instruction">${o.lbl}</span></div>`+
+`<div class="order-hint">Tap a number below to place it in order. Tap a dimmed number to remove it from its slot.</div>`+
+`<div class="order-labels"><span>${firstLbl}</span><span>${lastLbl}</span></div>`+
+`<div class="order-slots">${slots}</div>`+
+`<div class="order-hint">Choose from:</div>`+
+`<div class="order-bank" id="obank-${oi}"></div>`+
+`<div class="order-status" id="ostat-${oi}"></div>`;
+const bank=wrap.querySelector(’#obank-’+oi);
+shuffled.forEach(({v,i})=>{
+const t=el(‘div’,‘order-tile’);t.id=`otile-${oi}-${i}`;t.textContent=v;
+t.onclick=()=>oClick(oi,i,state);bank.appendChild(t);
+});
+return wrap;
 }
 function oClick(oi,ti,state){
-  if(state.done)return;
-  const pos=state.placed.indexOf(ti);
-  if(pos>=0){state.placed.splice(pos,1);}
-  else{if(state.placed.length>=4)return;state.placed.push(ti);}
-  renderOrder(oi,state);
-  if(state.placed.length===4){state.done=true;const s=document.getElementById('ostat-'+oi);s.textContent='All placed! Submit to see if they\'re correct.';s.style.color='var(--blue2)';updateProgress();}
-  else updateProgress();
+if(state.locked)return;
+const pos=state.placed.indexOf(ti);
+if(pos>=0){
+state.placed.splice(pos,1);
+state.done=false;
+} else {
+if(state.placed.length>=4){
+// All 4 placed — clicking a new tile replaces the last one
+state.placed.pop();
+state.placed.push(ti);
+} else {
+state.placed.push(ti);
+}
+}
+renderOrder(oi,state);
+const s=document.getElementById(‘ostat-’+oi);
+if(state.placed.length===4){
+state.done=true;
+s.textContent=‘All placed! Tap any number to swap it. Submit when ready.’;
+s.style.color=‘var(–blue2)’;
+} else {
+state.done=false;
+s.textContent=’’;
+}
+updateProgress();
 }
 function renderOrder(oi,state){
-  const o=state.data;
-  const nth=['st','nd','rd','th'];
-  state.shuffled.forEach(({i})=>{const t=document.getElementById(`otile-${oi}-${i}`);if(t)t.className='order-tile'+(state.placed.includes(i)?' placed':'');});
-  for(let pos=0;pos<4;pos++){
-    const slot=document.getElementById(`oslot-${oi}-${pos}`);
-    if(pos<state.placed.length){
-      const v=o.vals[state.placed[pos]];
-      slot.className='order-slot filled';
-      slot.innerHTML=`<span style="font-family:'Nunito',sans-serif;font-weight:700;font-size:.9rem;color:var(--blue2)">${v}</span>`;
-    } else {
-      slot.className='order-slot';
-      slot.innerHTML=`<span style="font-size:.65rem;color:var(--muted)">${pos+1}${nth[pos]}</span>`;
-    }
-  }
+const o=state.data;
+const nth=[‘st’,‘nd’,‘rd’,‘th’];
+state.shuffled.forEach(({i})=>{const t=document.getElementById(`otile-${oi}-${i}`);if(t)t.className=‘order-tile’+(state.placed.includes(i)?’ placed’:’’);});
+for(let pos=0;pos<4;pos++){
+const slot=document.getElementById(`oslot-${oi}-${pos}`);
+if(pos<state.placed.length){
+const v=o.vals[state.placed[pos]];
+slot.className=‘order-slot filled’;
+slot.innerHTML=`<span style="font-family:'Nunito',sans-serif;font-weight:700;font-size:.9rem;color:var(--blue2)">${v}</span>`;
+} else {
+slot.className=‘order-slot’;
+slot.innerHTML=`<span style="font-size:.65rem;color:var(--muted)">${pos+1}${nth[pos]}</span>`;
+}
+}
 }
 
 /* ══ PROGRESS ══ */
 function updateProgress(){
-  let done=0;
-  if(selectedTest==='arith'){
-    allQs.forEach(q=>{
-      if(q.type==='arith'&&document.getElementById('q'+q.num)?.value.trim())done++;
-      else if(q.type==='match'&&matchStates[q.mi]?.done)done++;
-      else if(q.type==='order'&&orderStates[q.oi]?.done)done++;
-    });
-    document.getElementById('answered').textContent=done+' / '+totalMarks;
-    document.getElementById('progress').style.width=Math.round(done/totalMarks*100)+'%';
-  } else {
-    let attempted=0;
-    allQs.forEach((q,qi)=>{
-      const d=q.data;
-      if(d.type==='mcq'&&mcqSelections[qi]!==undefined)attempted+=d.marks;
-      else if(d.type==='input'&&document.getElementById('rinp-'+qi)?.value.trim())attempted+=d.marks;
-      else if(d.type==='input2'){
-        const allFilled=d.answers.every((_,li)=>document.getElementById(`rinp-${qi}-${li}`)?.value.trim());
-        if(allFilled)attempted+=d.marks;
-      }
-    });
-    document.getElementById('answered').textContent=attempted+' / '+totalMarks;
-    document.getElementById('progress').style.width=Math.round(attempted/totalMarks*100)+'%';
-  }
+let done=0;
+if(selectedTest===‘arith’){
+allQs.forEach(q=>{
+if(q.type===‘arith’&&document.getElementById(‘q’+q.num)?.value.trim())done++;
+else if(q.type===‘match’&&matchStates[q.mi]?.done)done++;
+else if(q.type===‘order’&&orderStates[q.oi]?.done)done++;
+});
+document.getElementById(‘answered’).textContent=done+’ / ’+totalMarks;
+document.getElementById(‘progress’).style.width=Math.round(done/totalMarks*100)+’%’;
+} else {
+let attempted=0;
+allQs.forEach((q,qi)=>{
+const d=q.data;
+if(d.type===‘mcq’&&mcqSelections[qi]!==undefined)attempted+=d.marks;
+else if(d.type===‘input’&&document.getElementById(‘rinp-’+qi)?.value.trim())attempted+=d.marks;
+else if(d.type===‘input2’){
+const allFilled=d.answers.every((_,li)=>document.getElementById(`rinp-${qi}-${li}`)?.value.trim());
+if(allFilled)attempted+=d.marks;
+}
+});
+document.getElementById(‘answered’).textContent=attempted+’ / ‘+totalMarks;
+document.getElementById(‘progress’).style.width=Math.round(attempted/totalMarks*100)+’%’;
+}
 }
 
 /* ══ TIMER ══ */
+let warningShown=false;
+function dismissWarning(){document.getElementById(‘time-warning-overlay’).classList.remove(‘show’);}
 function startTimer(){
-  timerInterval=setInterval(()=>{
-    seconds--;
-    const mm=Math.floor(seconds/60),ss=seconds%60;
-    const el2=document.getElementById('timer');
-    el2.textContent=mm+':'+(ss<10?'0':'')+ss;
-    if(seconds<=120)el2.classList.add('warning');
-    if(seconds<=0){stopTimer();markTest();}
-  },1000);
+warningShown=false;
+timerInterval=setInterval(()=>{
+seconds–;
+const mm=Math.floor(seconds/60),ss=seconds%60;
+const el2=document.getElementById(‘timer’);
+el2.textContent=mm+’:’+(ss<10?‘0’:’’)+ss;
+if(seconds<=120){
+el2.classList.add(‘warning’);
+if(!warningShown){
+warningShown=true;
+document.getElementById(‘time-warning-overlay’).classList.add(‘show’);
+}
+}
+if(seconds<=0){stopTimer();dismissWarning();markTest();}
+},1000);
 }
 function stopTimer(){clearInterval(timerInterval);}
 
 /* ══ MARK ══ */
 function markTest(){
-  stopTimer();
-  let score=0,wrong=[];
+stopTimer();
+let score=0,wrong=[];
 
-  if(selectedTest==='arith'){
-    const sb={Addition:{c:0,t:8},Subtraction:{c:0,t:8},Multiplication:{c:0,t:8},Division:{c:0,t:8},'Match Equivalent Values':{c:0,t:4},'Order These Numbers':{c:0,t:4}};
-    allQs.forEach(q=>{
-      if(q.type==='arith'){
-        const inp=document.getElementById('q'+q.num);
-        const v=parseFloat(inp.value.trim().replace(/,/g,''));
-        const ok=!isNaN(v)&&Math.abs(v-q.a)<0.001;
-        const chk=document.getElementById('chk'+q.num);chk.classList.add('show');
-        if(ok){score++;inp.classList.add('correct');chk.textContent='✓';chk.style.color='var(--green)';sb[q.section].c++;}
-        else{inp.classList.add('wrong');chk.textContent='✗';chk.style.color='var(--red)';
-          wrong.push({num:q.num,desc:q.q+' = ?',correct:''+q.a,given:inp.value.trim()||'(blank)'});}
-        inp.disabled=true;
-      } else if(q.type==='match'){
-        const state=matchStates[q.mi],mi=q.mi,m=state.data;
-        let allOk=true;const cols={};
-        for(let li=0;li<4;li++){
-          const given=state.pairs[li],correct=m.sol[li];
-          cols[li]=given===correct?'#1a9e5f':'#d63b3b';
-          const lp=document.querySelector(`#mwrap-${mi} .match-pill[data-li="${li}"]`);
-          const rp=given!==undefined?document.querySelector(`#mwrap-${mi} .match-pill[data-ri="${given}"]`):null;
-          if(given===correct){if(lp)lp.classList.add('correct-final');if(rp)rp.classList.add('correct-final');}
-          else{allOk=false;if(lp)lp.classList.add('wrong-final');if(rp)rp.classList.add('wrong-final');
-            const cr=document.querySelector(`#mwrap-${mi} .match-pill[data-ri="${correct}"]`);if(cr)cr.classList.add('correct-final');}
-        }
-        drawLines(mi,state,cols);
-        const stat=document.getElementById('mstat-'+mi);
-        if(allOk){score++;sb['Match Equivalent Values'].c++;stat.textContent='✓ All correct!';stat.style.color='var(--green)';}
-        else{stat.textContent='✗ Some wrong — correct pairs shown in green.';stat.style.color='var(--red)';
-          wrong.push({num:q.num,desc:'Match equivalent values',correct:'See highlighted pairs',given:''});}
-      } else if(q.type==='order'){
-        const state=orderStates[q.oi],oi=q.oi,o=state.data;
-        const idxs=o.vals.map((_,i)=>i);
-        const corr=o.dir==='desc'?[...idxs].sort((a,b)=>o.keys[b]-o.keys[a]):[...idxs].sort((a,b)=>o.keys[a]-o.keys[b]);
-        const corrKeys=corr.map(i=>o.keys[i]);
-        const placedKeys=state.placed.map(i=>o.keys[i]);
-        const ok=placedKeys.length===4&&placedKeys.every((k,i)=>Math.abs(k-corrKeys[i])<0.0001);
-        const nth=['st','nd','rd','th'];
-        for(let pos=0;pos<4;pos++){
-          const slot=document.getElementById(`oslot-${oi}-${pos}`);
-          const pk=state.placed[pos]!==undefined?o.keys[state.placed[pos]]:null;
-          const posOk=pk!==null&&Math.abs(pk-corrKeys[pos])<0.0001;
-          slot.classList.add(posOk?'correct-final':'wrong-final');
-          if(state.placed[pos]!==undefined){const t=document.getElementById(`otile-${oi}-${state.placed[pos]}`);if(t){t.classList.remove('placed');t.classList.add(posOk?'correct-final':'wrong-final');}}
-        }
-        const stat=document.getElementById('ostat-'+oi);
-        if(ok){score++;sb['Order These Numbers'].c++;stat.textContent='✓ Correct order!';stat.style.color='var(--green)';}
-        else{const corrVals=corr.map(i=>o.vals[i]).join(' › ');stat.textContent='✗ Correct: '+corrVals;stat.style.color='var(--red)';
-          wrong.push({num:q.num,desc:o.lbl+': '+o.vals.join(', '),correct:corrVals,given:state.placed.map(i=>o.vals[i]).join(' › ')||'(blank)'});}
-      }
-    });
-    showResults(score,wrong,sb,totalMarks);
+if(selectedTest===‘arith’){
+const sb={Addition:{c:0,t:8},Subtraction:{c:0,t:8},Multiplication:{c:0,t:8},Division:{c:0,t:8},‘Match Equivalent Values’:{c:0,t:4},‘Order These Numbers’:{c:0,t:4}};
+allQs.forEach(q=>{
+if(q.type===‘arith’){
+const inp=document.getElementById(‘q’+q.num);
+const v=parseFloat(inp.value.trim().replace(/,/g,’’));
+const ok=!isNaN(v)&&Math.abs(v-q.a)<0.001;
+const chk=document.getElementById(‘chk’+q.num);chk.classList.add(‘show’);
+if(ok){score++;inp.classList.add(‘correct’);chk.textContent=‘✓’;chk.style.color=‘var(–green)’;sb[q.section].c++;}
+else{inp.classList.add(‘wrong’);chk.textContent=‘✗’;chk.style.color=‘var(–red)’;
+wrong.push({num:q.num,desc:q.q+’ = ?’,correct:’’+q.a,given:inp.value.trim()||’(blank)’});}
+inp.disabled=true;
+} else if(q.type===‘match’){
+const state=matchStates[q.mi],mi=q.mi,m=state.data;
+let allOk=true;const cols={};
+for(let li=0;li<4;li++){
+const given=state.pairs[li],correct=m.sol[li];
+cols[li]=given===correct?’#1a9e5f’:’#d63b3b’;
+const lp=document.querySelector(`#mwrap-${mi} .match-pill[data-li="${li}"]`);
+const rp=given!==undefined?document.querySelector(`#mwrap-${mi} .match-pill[data-ri="${given}"]`):null;
+if(given===correct){if(lp)lp.classList.add(‘correct-final’);if(rp)rp.classList.add(‘correct-final’);}
+else{allOk=false;if(lp)lp.classList.add(‘wrong-final’);if(rp)rp.classList.add(‘wrong-final’);
+const cr=document.querySelector(`#mwrap-${mi} .match-pill[data-ri="${correct}"]`);if(cr)cr.classList.add(‘correct-final’);}
+}
+drawLines(mi,state,cols);
+const stat=document.getElementById(‘mstat-’+mi);
+if(allOk){score++;sb[‘Match Equivalent Values’].c++;stat.textContent=‘✓ All correct!’;stat.style.color=‘var(–green)’;}
+else{stat.textContent=‘✗ Some wrong — correct pairs shown in green.’;stat.style.color=‘var(–red)’;
+wrong.push({num:q.num,desc:‘Match equivalent values’,correct:‘See highlighted pairs’,given:’’});}
+} else if(q.type===‘order’){
+const state=orderStates[q.oi],oi=q.oi,o=state.data;
+const idxs=o.vals.map((_,i)=>i);
+const corr=o.dir===‘desc’?[…idxs].sort((a,b)=>o.keys[b]-o.keys[a]):[…idxs].sort((a,b)=>o.keys[a]-o.keys[b]);
+const corrKeys=corr.map(i=>o.keys[i]);
+const placedKeys=state.placed.map(i=>o.keys[i]);
+const ok=placedKeys.length===4&&placedKeys.every((k,i)=>Math.abs(k-corrKeys[i])<0.0001);
+const nth=[‘st’,‘nd’,‘rd’,‘th’];
+for(let pos=0;pos<4;pos++){
+const slot=document.getElementById(`oslot-${oi}-${pos}`);
+const pk=state.placed[pos]!==undefined?o.keys[state.placed[pos]]:null;
+const posOk=pk!==null&&Math.abs(pk-corrKeys[pos])<0.0001;
+slot.classList.add(posOk?‘correct-final’:‘wrong-final’);
+if(state.placed[pos]!==undefined){const t=document.getElementById(`otile-${oi}-${state.placed[pos]}`);if(t){t.classList.remove(‘placed’);t.classList.add(posOk?‘correct-final’:‘wrong-final’);}}
+}
+const stat=document.getElementById(‘ostat-’+oi);
+if(ok){score++;sb[‘Order These Numbers’].c++;stat.textContent=‘✓ Correct order!’;stat.style.color=‘var(–green)’;}
+else{const corrVals=corr.map(i=>o.vals[i]).join(’ › ’);stat.textContent=‘✗ Correct: ‘+corrVals;stat.style.color=‘var(–red)’;
+wrong.push({num:q.num,desc:o.lbl+’: ‘+o.vals.join(’, ‘),correct:corrVals,given:state.placed.map(i=>o.vals[i]).join(’ › ‘)||’(blank)’});}
+}
+});
+showResults(score,wrong,sb,totalMarks);
 
-  } else {
-    // Reasoning marking
-    allQs.forEach((q,qi)=>{
-      const d=q.data;
-      if(d.type==='mcq'){
-        const given=mcqSelections[qi];
-        const correct=d.answers[0];
-        const ok=given===correct;
-        const opts=document.querySelectorAll(`#mcq-${qi} .mcq-opt`);
-        opts.forEach((o,oi)=>{o.style.pointerEvents='none';});
-        opts[correct]?.classList.add('correct-final');
-        if(ok){score+=d.marks;if(given!==correct&&given!==undefined)opts[given]?.classList.add('wrong-final');}
-        else{if(given!==undefined)opts[given]?.classList.add('wrong-final');
-          wrong.push({num:q.num,desc:d.question.replace(/<[^>]+>/g,'').substring(0,60)+'…',correct:d.opts[correct],given:given!==undefined?d.opts[given]:'(blank)'});}
-        const chk=document.getElementById('rchk-'+qi);if(chk){chk.classList.add('show');chk.textContent=ok?'✓':'✗';chk.style.color=ok?'var(--green)':'var(--red)';}
-      } else if(d.type==='input'){
-        const inp=document.getElementById('rinp-'+qi);
-        const raw=inp?inp.value.trim().replace(/[£,]/g,''):'';
-        const v=parseFloat(raw);
-        const ok=!isNaN(v)&&d.answers.some(a=>Math.abs(v-a)<0.05);
-        if(inp){inp.disabled=true;inp.classList.add(ok?'correct':'wrong');}
-        const chk=document.getElementById('rchk-'+qi);if(chk){chk.classList.add('show');chk.textContent=ok?'✓':'✗';chk.style.color=ok?'var(--green)':'var(--red)';}
-        if(ok)score+=d.marks;
-        else wrong.push({num:q.num,desc:(d.context?'[context] ':'')+d.question.replace(/<[^>]+>/g,'').substring(0,60),correct:''+d.answers[0]+(d.units?d.units[0]:''),given:raw||'(blank)'});
-      } else if(d.type==='input2'){
-        let allOk=true;
-        d.answers.forEach((ans,li)=>{
-          const inp=document.getElementById(`rinp-${qi}-${li}`);
-          const raw=inp?inp.value.trim().replace(/[£,]/g,''):'';
-          const v=parseFloat(raw);
-          const ok=!isNaN(v)&&Math.abs(v-ans)<0.05;
-          if(inp){inp.disabled=true;inp.classList.add(ok?'correct':'wrong');}
-          if(!ok)allOk=false;
-        });
-        const chk=document.getElementById('rchk-'+qi);if(chk){chk.classList.add('show');chk.textContent=allOk?'✓':'✗';chk.style.color=allOk?'var(--green)':'var(--red)';}
-        if(allOk)score+=d.marks;
-        else wrong.push({num:q.num,desc:(d.context?'[context] ':'')+d.question.replace(/<[^>]+>/g,'').substring(0,60),correct:d.answers.map((a,li)=>d.labels[li]+': '+a).join(', '),given:'see inputs'});
-      }
-    });
-    showResults(score,wrong,null,totalMarks);
-  }
+} else {
+// Reasoning marking
+allQs.forEach((q,qi)=>{
+const d=q.data;
+if(d.type===‘mcq’){
+const given=mcqSelections[qi];
+const correct=d.answers[0];
+const ok=given===correct;
+const opts=document.querySelectorAll(`#mcq-${qi} .mcq-opt`);
+opts.forEach((o,oi)=>{o.style.pointerEvents=‘none’;});
+opts[correct]?.classList.add(‘correct-final’);
+if(ok){score+=d.marks;if(given!==correct&&given!==undefined)opts[given]?.classList.add(‘wrong-final’);}
+else{if(given!==undefined)opts[given]?.classList.add(‘wrong-final’);
+wrong.push({num:q.num,desc:d.question.replace(/<[^>]+>/g,’’).substring(0,60)+’…’,correct:d.opts[correct],given:given!==undefined?d.opts[given]:’(blank)’});}
+const chk=document.getElementById(‘rchk-’+qi);if(chk){chk.classList.add(‘show’);chk.textContent=ok?‘✓’:‘✗’;chk.style.color=ok?‘var(–green)’:‘var(–red)’;}
+} else if(d.type===‘input’){
+const inp=document.getElementById(‘rinp-’+qi);
+const raw=inp?inp.value.trim().replace(/[£,]/g,’’):’’;
+const v=parseFloat(raw);
+const ok=!isNaN(v)&&d.answers.some(a=>Math.abs(v-a)<0.05);
+if(inp){inp.disabled=true;inp.classList.add(ok?‘correct’:‘wrong’);}
+const chk=document.getElementById(‘rchk-’+qi);if(chk){chk.classList.add(‘show’);chk.textContent=ok?‘✓’:‘✗’;chk.style.color=ok?‘var(–green)’:‘var(–red)’;}
+if(ok)score+=d.marks;
+else wrong.push({num:q.num,desc:(d.context?’[context] ‘:’’)+d.question.replace(/<[^>]+>/g,’’).substring(0,60),correct:’’+d.answers[0]+(d.units?d.units[0]:’’),given:raw||’(blank)’});
+} else if(d.type===‘input2’){
+let allOk=true;
+d.answers.forEach((ans,li)=>{
+const inp=document.getElementById(`rinp-${qi}-${li}`);
+const raw=inp?inp.value.trim().replace(/[£,]/g,’’):’’;
+const v=parseFloat(raw);
+const ok=!isNaN(v)&&Math.abs(v-ans)<0.05;
+if(inp){inp.disabled=true;inp.classList.add(ok?‘correct’:‘wrong’);}
+if(!ok)allOk=false;
+});
+const chk=document.getElementById(‘rchk-’+qi);if(chk){chk.classList.add(‘show’);chk.textContent=allOk?‘✓’:‘✗’;chk.style.color=allOk?‘var(–green)’:‘var(–red)’;}
+if(allOk)score+=d.marks;
+else wrong.push({num:q.num,desc:(d.context?’[context] ‘:’’)+d.question.replace(/<[^>]+>/g,’’).substring(0,60),correct:d.answers.map((a,li)=>d.labels[li]+’: ‘+a).join(’, ’),given:‘see inputs’});
+}
+});
+showResults(score,wrong,null,totalMarks);
+}
 }
 
 /* ══ RESULTS ══ */
 function showResults(score,wrong,sb,total){
-  document.getElementById('test-screen').style.display='none';
-  document.getElementById('results-screen').style.display='block';
-  window.scrollTo({top:0,behavior:'smooth'});
-  document.getElementById('res-score').textContent=score;
-  document.getElementById('res-denom').textContent='out of '+total;
-  document.getElementById('res-name').textContent=pupilName+"'s results";
+document.getElementById(‘test-screen’).style.display=‘none’;
+document.getElementById(‘results-screen’).style.display=‘block’;
+window.scrollTo({top:0,behavior:‘smooth’});
+document.getElementById(‘res-score’).textContent=score;
+document.getElementById(‘res-denom’).textContent=’out of ’+total;
+document.getElementById(‘res-name’).textContent=pupilName+”’s results”;
 
-  const pct=score/total;
-  let band,cc,bt;
-  if(selectedTest==='arith'){
-    if(score>=34){band='Excellent';cc='band-excellent';bt='Well above expected standard';}
-    else if(score>=26){band='Good';cc='band-good';bt='Meeting expected Year 5 standard';}
-    else if(score>=18){band='Developing';cc='band-developing';bt='Approaching expected standard';}
-    else{band='Needs support';cc='band-support';bt='Below expected standard';}
-  } else {
-    if(pct>=0.85){band='Excellent';cc='band-excellent';bt='Well above expected standard';}
-    else if(pct>=0.65){band='Good';cc='band-good';bt='Meeting expected Year 5 standard';}
-    else if(pct>=0.45){band='Developing';cc='band-developing';bt='Approaching expected standard';}
-    else{band='Needs support';cc='band-support';bt='Below expected standard';}
-  }
-  document.getElementById('res-band').textContent=bt;
-  const chip=document.getElementById('res-chip');chip.textContent=band;chip.className='band-chip '+cc;
+const pct=score/total;
+let band,cc,bt;
+if(selectedTest===‘arith’){
+if(score>=34){band=‘Excellent’;cc=‘band-excellent’;bt=‘Well above expected standard’;}
+else if(score>=26){band=‘Good’;cc=‘band-good’;bt=‘Meeting expected Year 5 standard’;}
+else if(score>=18){band=‘Developing’;cc=‘band-developing’;bt=‘Approaching expected standard’;}
+else{band=‘Needs support’;cc=‘band-support’;bt=‘Below expected standard’;}
+} else {
+if(pct>=0.85){band=‘Excellent’;cc=‘band-excellent’;bt=‘Well above expected standard’;}
+else if(pct>=0.65){band=‘Good’;cc=‘band-good’;bt=‘Meeting expected Year 5 standard’;}
+else if(pct>=0.45){band=‘Developing’;cc=‘band-developing’;bt=‘Approaching expected standard’;}
+else{band=‘Needs support’;cc=‘band-support’;bt=‘Below expected standard’;}
+}
+document.getElementById(‘res-band’).textContent=bt;
+const chip=document.getElementById(‘res-chip’);chip.textContent=band;chip.className=’band-chip ’+cc;
 
-  const dt=document.getElementById('breakdown-title'),wl=document.getElementById('wrong-list');
-  wl.innerHTML='';
-  if(wrong.length===0){dt.textContent='🎉 Perfect score! All '+total+' marks!';}
-  else{
-    dt.textContent=`Review (${wrong.length} question${wrong.length!==1?'s':''} to practise):`;
-    wrong.forEach(w=>{
-      const li=el('li','wrong-item');
-      li.innerHTML=`<span class="wrong-qnum">Q${w.num}</span><span class="wrong-q">${w.desc}</span>`+
-        `<span class="wrong-correct">✓ ${w.correct}</span>`+
-        (w.given?`<span class="wrong-given">(you wrote: ${w.given})</span>`:'<span class="wrong-given">(blank/incorrect)</span>');
-      wl.appendChild(li);
-    });
-  }
-
-  const testNames={arith:'Arithmetic',r2:'Reasoning Test 2',r3:'Reasoning Test 3'};
-  const tt=formatTime((selectedTest==='arith'?30:40)*60-seconds);
-  let ss='';
-  if(sb)Object.entries(sb).forEach(([t,d])=>{ss+=`  ${t}: ${d.c}/${d.t}\n`;});
-  else ss='  Score: '+score+'/'+total+'\n';
-  const ws=wrong.length===0?'All correct!':wrong.map(w=>`  Q${w.num}: ${w.desc}  ✓ ${w.correct}${w.given?' (wrote: '+w.given+')':''}`).join('\n');
-  const body=`Year 5 Maths Test Results\n====================\nChild: ${pupilName}\nTest: ${testNames[selectedTest]}\nScore: ${score}/${total}\nBand: ${band} - ${bt}\nTime: ${tt}\nVariant: ${variantCode}\n\nBreakdown:\n${ss}\nTo review:\n${ws}\n====================\n${new Date().toLocaleString('en-GB')}`;
-  sendEmail(score,total,band,tt,body,testNames[selectedTest]);
+const dt=document.getElementById(‘breakdown-title’),wl=document.getElementById(‘wrong-list’);
+wl.innerHTML=’’;
+if(wrong.length===0){dt.textContent=‘🎉 Perfect score! All ‘+total+’ marks!’;}
+else{
+dt.textContent=`Review (${wrong.length} question${wrong.length!==1?'s':''} to practise):`;
+wrong.forEach(w=>{
+const li=el(‘li’,‘wrong-item’);
+li.innerHTML=`<span class="wrong-qnum">Q${w.num}</span><span class="wrong-q">${w.desc}</span>`+
+`<span class="wrong-correct">✓ ${w.correct}</span>`+
+(w.given?`<span class="wrong-given">(you wrote: ${w.given})</span>`:’<span class="wrong-given">(blank/incorrect)</span>’);
+wl.appendChild(li);
+});
 }
 
-function formatTime(e){const m=Math.floor(Math.max(0,e)/60),s=Math.max(0,e)%60;return m+' min '+s+' sec';}
+const testNames={arith:‘Arithmetic’,r2:‘Reasoning Test 2’,r3:‘Reasoning Test 3’};
+const tt=formatTime((selectedTest===‘arith’?30:40)*60-seconds);
+let ss=’’;
+if(sb)Object.entries(sb).forEach(([t,d])=>{ss+=`  ${t}: ${d.c}/${d.t}\n`;});
+else ss=’  Score: ‘+score+’/’+total+’\n’;
+const ws=wrong.length===0?‘All correct!’:wrong.map(w=>`  Q${w.num}: ${w.desc}  ✓ ${w.correct}${w.given?' (wrote: '+w.given+')':''}`).join(’\n’);
+const body=`Year 5 Maths Test Results\n====================\nChild: ${pupilName}\nTest: ${testNames[selectedTest]}\nScore: ${score}/${total}\nBand: ${band} - ${bt}\nTime: ${tt}\nVariant: ${variantCode}\n\nBreakdown:\n${ss}\nTo review:\n${ws}\n====================\n${new Date().toLocaleString('en-GB')}`;
+sendEmail(score,total,band,tt,body,testNames[selectedTest]);
+}
+
+function formatTime(e){const m=Math.floor(Math.max(0,e)/60),s=Math.max(0,e)%60;return m+’ min ‘+s+’ sec’;}
 
 /* ══ EMAIL ══ */
 function sendEmail(score,total,band,tt,body,testName){
-  const el2=document.getElementById('email-status');
-  el2.className='email-status sending';el2.textContent='📨 Sending results to your parent...';
-  emailjs.send(EJS_SVC,EJS_TPL,{to_email:P_EMAIL,pupil_name:pupilName,score:score+' / '+total,band,time_taken:tt,results_body:body,date:new Date().toLocaleString('en-GB')})
-  .then(()=>{el2.className='email-status sent';el2.textContent='✅ Results sent to your parent!';})
-  .catch(e=>{el2.className='email-status failed';el2.textContent='⚠️ Could not send email — show this page to your parent.';console.error(e);});
+const el2=document.getElementById(‘email-status’);
+el2.className=‘email-status sending’;el2.textContent=‘📨 Sending results to your parent…’;
+emailjs.send(EJS_SVC,EJS_TPL,{to_email:P_EMAIL,pupil_name:pupilName,score:score+’ / ’+total,band,time_taken:tt,results_body:body,date:new Date().toLocaleString(‘en-GB’)})
+.then(()=>{el2.className=‘email-status sent’;el2.textContent=‘✅ Results sent to your parent!’;})
+.catch(e=>{el2.className=‘email-status failed’;el2.textContent=‘⚠️ Could not send email — show this page to your parent.’;console.error(e);});
 }
 
 /* ══ START / RESET ══ */
 function startTest(){
-  const n=document.getElementById('pupil-name').value.trim();
-  if(!n){document.getElementById('pupil-name').focus();return;}
-  if(!selectedTest){return;}
-  pupilName=n;
-  document.getElementById('name-screen').style.display='none';
-  document.getElementById('test-screen').style.display='block';
-  document.getElementById('name-display').textContent=pupilName;
-  buildTest();startTimer();
+const n=document.getElementById(‘pupil-name’).value.trim();
+if(!n){document.getElementById(‘pupil-name’).focus();return;}
+if(!selectedTest){return;}
+pupilName=n;
+document.getElementById(‘name-screen’).style.display=‘none’;
+document.getElementById(‘test-screen’).style.display=‘block’;
+document.getElementById(‘name-display’).textContent=pupilName;
+buildTest();startTimer();
 }
-function confirmReset(){if(confirm('Start again? All answers will be cleared.'))resetAll();}
+function confirmReset(){if(confirm(‘Start again? All answers will be cleared.’))resetAll();}
 function resetAll(){
-  stopTimer();seconds=30*60;pupilName='';selectedTest='';
-  document.getElementById('pupil-name').value='';
-  document.getElementById('results-screen').style.display='none';
-  document.getElementById('test-screen').style.display='none';
-  document.getElementById('name-screen').style.display='block';
-  document.getElementById('timer').classList.remove('warning');
-  ['arith','r2','r3'].forEach(k=>document.getElementById('tc-'+k).classList.remove('selected'));
-  document.getElementById('btn-start').disabled=true;
-  document.getElementById('btn-start').textContent='Select a test to begin →';
-  document.getElementById('header-title').textContent='Year 5 Maths Tests';
-  document.getElementById('header-sub').textContent='Based on NFER format';
-  generateTest();window.scrollTo({top:0,behavior:'smooth'});
+stopTimer();dismissWarning();seconds=30*60;pupilName=’’;selectedTest=’’;
+document.getElementById(‘pupil-name’).value=’’;
+document.getElementById(‘results-screen’).style.display=‘none’;
+document.getElementById(‘test-screen’).style.display=‘none’;
+document.getElementById(‘name-screen’).style.display=‘block’;
+document.getElementById(‘timer’).classList.remove(‘warning’);
+[‘arith’,‘r2’,‘r3’].forEach(k=>document.getElementById(‘tc-’+k).classList.remove(‘selected’));
+document.getElementById(‘btn-start’).disabled=true;
+document.getElementById(‘btn-start’).textContent=‘Select a test to begin →’;
+document.getElementById(‘header-title’).textContent=‘Year 5 Maths Tests’;
+document.getElementById(‘header-sub’).textContent=‘Based on NFER format’;
+generateTest();window.scrollTo({top:0,behavior:‘smooth’});
 }
 
 /* ══ INIT ══ */
 generateTest();
 </script>
+
 </body>
 </html>
