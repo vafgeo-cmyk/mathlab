@@ -180,6 +180,15 @@ body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text)
 .wrong-correct{color:var(--green);font-weight:700}
 .wrong-given{color:var(--red);font-size:.82rem}
 
+/* toast announcements */
+.toast{position:fixed;top:1.2rem;left:50%;transform:translateX(-50%) translateY(-120px);z-index:998;
+  background:var(--navy);color:white;font-family:'Nunito',sans-serif;font-weight:700;font-size:1rem;
+  padding:.75rem 1.5rem;border-radius:99px;box-shadow:0 4px 24px rgba(0,0,0,.25);
+  transition:transform .4s cubic-bezier(.34,1.56,.64,1),opacity .3s;opacity:0;white-space:nowrap;pointer-events:none;}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1;}
+.toast.amber{background:var(--amber);}
+.toast.red{background:var(--red);}
+
 /* 2-minute warning overlay */
 .time-warning-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:999;align-items:center;justify-content:center;}
 .time-warning-overlay.show{display:flex;}
@@ -278,6 +287,9 @@ body{font-family:'Nunito Sans',sans-serif;background:var(--bg);color:var(--text)
 </div>
 
 </div>
+
+<!-- toast notification -->
+<div class="toast" id="toast"></div>
 
 <!-- 2-minute warning overlay -->
 <div class="time-warning-overlay" id="time-warning-overlay">
@@ -794,19 +806,41 @@ function updateProgress(){
 }
 
 /* ══ TIMER ══ */
-let warningShown=false;
+let toastTimer=null;
+function showToast(msg,colour,duration=4000){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.className='toast'+(colour?' '+colour:'');
+  clearTimeout(toastTimer);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{t.classList.add('show');}));
+  toastTimer=setTimeout(()=>t.classList.remove('show'),duration);
+}
 function dismissWarning(){document.getElementById('time-warning-overlay').classList.remove('show');}
+
 function startTimer(){
-  warningShown=false;
+  const totalSecs=seconds;
+  const announcedMinutes=new Set();
+
   timerInterval=setInterval(()=>{
     seconds--;
     const mm=Math.floor(seconds/60),ss=seconds%60;
     const el2=document.getElementById('timer');
     el2.textContent=mm+':'+(ss<10?'0':'')+ss;
+
+    // Elapsed minutes announcements: 5,10,15,20... past start
+    const elapsed=Math.floor((totalSecs-seconds)/60);
+    if(elapsed>0&&elapsed%5===0&&ss===0&&!announcedMinutes.has(elapsed)){
+      announcedMinutes.add(elapsed);
+      showToast('⏱ '+elapsed+' minutes past','');
+    }
+
+    // Remaining warnings
+    if(seconds===600&&ss===0)showToast('⚠️ 10 minutes remaining','amber',5000);
+    if(seconds===300&&ss===0)showToast('⚠️ 5 minutes remaining','amber',5000);
+
+    // 2-minute blocking modal
     if(seconds<=120){
       el2.classList.add('warning');
-      if(!warningShown){
-        warningShown=true;
+      if(seconds===120){
         document.getElementById('time-warning-overlay').classList.add('show');
       }
     }
@@ -988,7 +1022,9 @@ function startTest(){
 }
 function confirmReset(){if(confirm('Start again? All answers will be cleared.'))resetAll();}
 function resetAll(){
-  stopTimer();dismissWarning();seconds=30*60;pupilName='';selectedTest='';
+  stopTimer();dismissWarning();
+  clearTimeout(toastTimer);document.getElementById('toast').classList.remove('show');
+  seconds=30*60;pupilName='';selectedTest='';
   document.getElementById('pupil-name').value='';
   document.getElementById('results-screen').style.display='none';
   document.getElementById('test-screen').style.display='none';
