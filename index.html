@@ -1004,7 +1004,7 @@ function formatTime(e){const m=Math.floor(Math.max(0,e)/60),s=Math.max(0,e)%60;r
 function sendEmail(score,total,band,tt,body,testName){
   const el2=document.getElementById('email-status');
   el2.className='email-status sending';el2.textContent='📨 Sending results to your parent...';
-  emailjs.send(EJS_SVC,EJS_TPL,{to_email:P_EMAIL,pupil_name:pupilName,score:score+' / '+total,band,time_taken:tt,results_body:body,date:new Date().toLocaleString('en-GB')})
+  emailjs.send(EJS_SVC,EJS_TPL,{to_email:P_EMAIL,pupil_name:pupilName,score:score+' / '+total,band,time_taken:tt,results_body:body,date:new Date().toLocaleString('en-GB'),test_name:testName,subject:'Year 5 Maths'})
   .then(()=>{el2.className='email-status sent';el2.textContent='✅ Results sent to your parent!';})
   .catch(e=>{el2.className='email-status failed';el2.textContent='⚠️ Could not send email — show this page to your parent.';console.error(e);});
 }
